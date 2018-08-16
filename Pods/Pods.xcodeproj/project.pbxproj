@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -64,17 +64,17 @@
 		790A1AA3EFC206A3550D5C0B2D162323 /* Pods-Tap_Tap.Food.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tap_Tap.Food.modulemap"; sourceTree = "<group>"; };
 		80762771EDD40AF52529BB553A19A046 /* UISideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISideMenuNavigationController.swift; path = Pod/Classes/UISideMenuNavigationController.swift; sourceTree = "<group>"; };
 		85C86EC42A444DB295C9D1AAE5DAB227 /* SideMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.xcconfig; sourceTree = "<group>"; };
-		861179B96AA453E0CD3F4081B037CD24 /* Pods_Tap_Tap_Food.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tap_Tap_Food.framework; path = "Pods-Tap_Tap.Food.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		861179B96AA453E0CD3F4081B037CD24 /* Pods_Tap_Tap_Food.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tap_Tap_Food.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B1E6465796C217F2C9A55DE582D38A /* Pods-Tap_Tap.Food-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tap_Tap.Food-acknowledgements.plist"; sourceTree = "<group>"; };
 		8D16A3948EB9E473AB870BADF2B40CA6 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9949763FE0585353F1453358837B6207 /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
-		9D2FA527ED54011009D126784621C951 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SideMenu.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D2FA527ED54011009D126784621C951 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3D54260D518E293872B37A076703F1B /* Pods-Tap_Tap.Food-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tap_Tap.Food-frameworks.sh"; sourceTree = "<group>"; };
 		C661B068A7F567ED94874E2759C79587 /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
 		D88C66AEAC5A64BCDCDF801382B5E5D5 /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
 		DF8FEB19A09F1CF34BC7AE5F17F2CCC9 /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
-		EC38229D791FD73A1122B1ABAD52D7F1 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC38229D791FD73A1122B1ABAD52D7F1 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0DF216ACCA85438D9C524A82291CD1 /* Pods-Tap_Tap.Food.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tap_Tap.Food.release.xcconfig"; sourceTree = "<group>"; };
 		F474D7FA003DEBEE61F58797DC8F8D4F /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,7 +148,6 @@
 				D88C66AEAC5A64BCDCDF801382B5E5D5 /* UITableViewVibrantCell.swift */,
 				B28A10130C540CF3510EF6B94B06FA2B /* Support Files */,
 			);
-			name = SideMenu;
 			path = SideMenu;
 			sourceTree = "<group>";
 		};
@@ -197,7 +196,6 @@
 				981334E326CB387445E35E1A59B8DF26 /* Base */,
 				00F6CE01A4DD4ED73A9106FCDCEF611D /* Maps */,
 			);
-			name = GoogleMaps;
 			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
@@ -261,7 +259,6 @@
 				2E595B8A2A55193D312B8B33F39C77B9 /* SwiftyJSON.swift */,
 				1162A60CE2C453022FC3EFD2137EC521 /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -459,7 +456,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Tap_Tap.Food/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Tap_Tap.Food/Pods-Tap_Tap.Food.modulemap";
@@ -531,7 +528,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -623,7 +620,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -746,7 +743,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Tap_Tap.Food/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Tap_Tap.Food/Pods-Tap_Tap.Food.modulemap";
