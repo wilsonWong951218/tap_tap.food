@@ -17,6 +17,9 @@
 		E250462021245DEA00002E46 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E250461F21245DE900002E46 /* DesignableTextField.swift */; };
 		E25046232124601C00002E46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25046222124601C00002E46 /* Main.storyboard */; };
 		E2504625212467D900002E46 /* SlideManuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2504624212467D900002E46 /* SlideManuVC.swift */; };
+		E2AAB3CB212513650054CE26 /* TableHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AAB3C9212513650054CE26 /* TableHeaderCell.swift */; };
+		E2AAB3CC212513650054CE26 /* TableHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2AAB3CA212513650054CE26 /* TableHeaderCell.xib */; };
+		E2AAB3D0212514CE0054CE26 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AAB3CF212514CE0054CE26 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		E250461F21245DE900002E46 /* DesignableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		E25046222124601C00002E46 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E2504624212467D900002E46 /* SlideManuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideManuVC.swift; sourceTree = "<group>"; };
+		E2AAB3C9212513650054CE26 /* TableHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderCell.swift; sourceTree = "<group>"; };
+		E2AAB3CA212513650054CE26 /* TableHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderCell.xib; sourceTree = "<group>"; };
+		E2AAB3CF212514CE0054CE26 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		E88BF8F8D74DE0E057CCB2B9 /* Pods_Tap_Tap_Food.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tap_Tap_Food.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,6 +85,7 @@
 			children = (
 				E228B5FC2122A2D600A78866 /* AppDelegate.swift */,
 				E250461E21245B8300002E46 /* Controller */,
+				E2AAB3C6212512000054CE26 /* VIew */,
 				E250462121245FFB00002E46 /* Storyboard */,
 				E228B6062122A2D800A78866 /* Assets.xcassets */,
 				E228B6082122A2D800A78866 /* LaunchScreen.storyboard */,
@@ -93,6 +100,7 @@
 			children = (
 				E228B5FE2122A2D600A78866 /* ViewController.swift */,
 				E2504624212467D900002E46 /* SlideManuVC.swift */,
+				E2AAB3CF212514CE0054CE26 /* TableViewController.swift */,
 				E250461F21245DE900002E46 /* DesignableTextField.swift */,
 			);
 			path = Controller;
@@ -105,6 +113,15 @@
 				E25046222124601C00002E46 /* Main.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		E2AAB3C6212512000054CE26 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				E2AAB3C9212513650054CE26 /* TableHeaderCell.swift */,
+				E2AAB3CA212513650054CE26 /* TableHeaderCell.xib */,
+			);
+			path = VIew;
 			sourceTree = "<group>";
 		};
 		EBFA3769CDC6BA9A0B42F45A /* Pods */ = {
@@ -180,6 +197,7 @@
 				E228B60A2122A2D800A78866 /* LaunchScreen.storyboard in Resources */,
 				E228B6072122A2D800A78866 /* Assets.xcassets in Resources */,
 				E228B6022122A2D600A78866 /* LoginPage.storyboard in Resources */,
+				E2AAB3CC212513650054CE26 /* TableHeaderCell.xib in Resources */,
 				E25046232124601C00002E46 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,8 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E228B6052122A2D600A78866 /* Tap_Tap_Food.xcdatamodeld in Sources */,
+				E2AAB3D0212514CE0054CE26 /* TableViewController.swift in Sources */,
 				E2504625212467D900002E46 /* SlideManuVC.swift in Sources */,
 				E228B5FF2122A2D600A78866 /* ViewController.swift in Sources */,
+				E2AAB3CB212513650054CE26 /* TableHeaderCell.swift in Sources */,
 				E228B5FD2122A2D600A78866 /* AppDelegate.swift in Sources */,
 				E250462021245DEA00002E46 /* DesignableTextField.swift in Sources */,
 			);

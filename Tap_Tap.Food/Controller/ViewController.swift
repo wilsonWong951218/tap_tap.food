@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         SideMenuManager.default.menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? UISideMenuNavigationController
         SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
         SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+        
         //三种不同的SideManu的显示.menuSlideIn, .viewSlideInOut, .menuDissolveIn
          SideMenuManager.default.menuPresentMode = .menuSlideIn
         //背后荧幕缩放1为初始值
