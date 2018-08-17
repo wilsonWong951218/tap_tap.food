@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -34,7 +34,7 @@
         <scene sceneID="tcX-85-lWz">
             <objects>
                 <tableViewController id="w5P-7a-wvx" customClass="SlideManuVC" customModule="Tap_Tap_Food" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kcs-v7-Thz">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kcs-v7-Thz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,7 +43,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pZ1-Eg-10C" id="t2x-XE-VqN">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -51,7 +51,7 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gtc-bM-GyC" id="vha-ob-uDp">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -59,7 +59,7 @@
                                 <rect key="frame" x="0.0" y="116" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d38-RH-EL1" id="Y88-XL-ub2">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -72,7 +72,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="OmC-6u-jLC"/>
                     <connections>
-                        <outlet property="tablerView" destination="kcs-v7-Thz" id="FdK-mq-Bca"/>
+                        <outlet property="sildeTableView" destination="kcs-v7-Thz" id="WwF-EL-vLz"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pes-D1-1E6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -84,7 +84,15 @@
             <objects>
                 <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FCq-lB-e6l" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="xsF-Dd-cgt"/>
+                    <navigationItem key="navigationItem" id="xsF-Dd-cgt">
+                        <barButtonItem key="leftBarButtonItem" title="Manu" id="d3l-jB-lSh">
+                            <connections>
+                                <segue destination="78R-GM-v8U" kind="popoverPresentation" popoverAnchorBarButtonItem="d3l-jB-lSh" id="k3l-66-Uma">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Lx7-6C-Djn">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -92,17 +100,19 @@
                         <color key="barTintColor" red="0.98431372549999996" green="0.61176470589999998" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="PfK-CI-zou" kind="relationship" relationship="viewControllers" id="b8X-61-K9k"/>
+                        <segue destination="kj1-ay-WGo" kind="relationship" relationship="viewControllers" id="FgJ-XU-lcf"/>
+                        <segue destination="d9e-C7-XKS" kind="relationship" relationship="viewControllers" id="V2u-k2-YYd"/>
+                        <segue destination="Ghh-OP-TFg" kind="relationship" relationship="viewControllers" id="1Bb-5t-Ndf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3TN-wy-fJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1390" y="940"/>
+            <point key="canvasLocation" x="-265" y="940"/>
         </scene>
-        <!--View Controller-->
+        <!--Tap.Tap-->
         <scene sceneID="4gu-Fg-Shm">
             <objects>
-                <viewController id="kj1-ay-WGo" customClass="ViewController" customModule="Tap_Tap_Food" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kj1-ay-WGo" customClass="MainVC" customModule="Tap_Tap_Food" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="XbV-B1-6rc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,25 +132,64 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="B15-dB-sxl"/>
                     </view>
-                    <navigationItem key="navigationItem" id="9LK-iL-kgn">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="jk3-fr-3AB">
-                            <connections>
-                                <segue destination="78R-GM-v8U" kind="popoverPresentation" popoverAnchorBarButtonItem="jk3-fr-3AB" id="ZsI-AQ-f5C">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="twK-T6-RG6"/>
-                    </navigationItem>
+                    <tabBarItem key="tabBarItem" title="Tap.Tap" id="0kb-w4-WoS"/>
+                    <navigationItem key="navigationItem" id="9LK-iL-kgn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYG-dW-cmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="496.80000000000001" y="940.47976011994012"/>
+            <point key="canvasLocation" x="897" y="2103"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="iZJ-G5-Fhe">
+            <objects>
+                <viewController id="Ghh-OP-TFg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ICr-ss-11g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="tvh-k0-c4x"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="l1W-3d-wSj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EBQ-Ca-0Dw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1241" y="2103"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="zmr-qh-bir">
+            <objects>
+                <viewController id="d9e-C7-XKS" customClass="MapVC" customModule="Tap_Tap_Food" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TtW-qu-Z3f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F75-lS-yXR" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="F75-lS-yXR" firstAttribute="bottom" secondItem="9Rc-oj-in2" secondAttribute="bottom" id="3tI-vu-m9X"/>
+                            <constraint firstItem="F75-lS-yXR" firstAttribute="top" secondItem="9Rc-oj-in2" secondAttribute="top" id="Q8a-pQ-lbX"/>
+                            <constraint firstItem="F75-lS-yXR" firstAttribute="leading" secondItem="9Rc-oj-in2" secondAttribute="leading" id="lw0-eP-P6s"/>
+                            <constraint firstItem="F75-lS-yXR" firstAttribute="trailing" secondItem="9Rc-oj-in2" secondAttribute="trailing" id="s6q-aQ-Skp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Rc-oj-in2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="PHv-yu-Jyf"/>
+                    <connections>
+                        <outlet property="mapView" destination="F75-lS-yXR" id="BXv-Rt-5xQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rjV-Tp-7j7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103.2" y="2102.698650674663"/>
         </scene>
         <!--Item-->
         <scene sceneID="kGD-dd-B47">
             <objects>
-                <navigationController id="PfK-CI-zou" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PfK-CI-zou" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="mBx-Zt-1HY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GPZ-BW-dqE">
@@ -154,12 +203,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="kj1-ay-WGo" kind="relationship" relationship="rootViewController" id="ZPd-vU-Vjm"/>
+                        <segue destination="FCq-lB-e6l" kind="relationship" relationship="rootViewController" id="an1-yX-w8e"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lzi-z9-35T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-442.39999999999998" y="940.47976011994012"/>
+            <point key="canvasLocation" x="-1105" y="928"/>
         </scene>
     </scenes>
 </document>

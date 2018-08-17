@@ -8,14 +8,21 @@
 
 import UIKit
 import CoreData
+import GoogleMaps
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let googleApiKey = "AIzaSyDeHOgTyHogO9LYzaoje7GM13RHP41SJfo"
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        //active GoogleAPI
+        GMSServices.provideAPIKey(googleApiKey)
+
         // Override point for customization after application launch.
         let storyboard = UIStoryboard(name:"LoginPage" , bundle: nil);
         self.window? = UIWindow(frame: UIScreen.main.bounds);

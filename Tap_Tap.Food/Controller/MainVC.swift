@@ -9,22 +9,22 @@
 import UIKit
 import SideMenu
 
-class ViewController: UIViewController {
+class MainVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        setUpSideMenu()
+        setUpSideMenu()
         
     }
 
     fileprivate func setUpSideMenu(){
         SideMenuManager.default.menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? UISideMenuNavigationController
-        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
-        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+
         
         //三种不同的SideManu的显示.menuSlideIn, .viewSlideInOut, .menuDissolveIn
          SideMenuManager.default.menuPresentMode = .menuSlideIn
+        
         //背后荧幕缩放1为初始值
         SideMenuManager.default.menuAnimationTransformScaleFactor = CGFloat(0.95)
         
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UISideMenuNavigationControllerDelegate {
+extension MainVC: UISideMenuNavigationControllerDelegate {
     
     func sideMenuWillAppear(menu: UISideMenuNavigationController, animated: Bool) {
         print("SideMenu Appearing! (animated: \(animated))")
@@ -57,5 +57,27 @@ extension ViewController: UISideMenuNavigationControllerDelegate {
         print("SideMenu Disappeared! (animated: \(animated))")
     }
     
+}
+
+extension Dictionary{
+    static func toNSAttributedStringKey(FontType:String,FontSiza:CGFloat,FontKern:Float,Color:UIColor,Aligment:String) -> [NSAttributedStringKey:Any] {
+        
+        let paragraphStyle = NSMutableParagraphStyle()
+        
+        switch Aligment {
+        case "center":
+            paragraphStyle.alignment = NSTextAlignment.center
+        case "right":
+            paragraphStyle.alignment = NSTextAlignment.right
+        case "left":
+            paragraphStyle.alignment = NSTextAlignment.left
+        default:
+            paragraphStyle.alignment = NSTextAlignment.left
+        }
+        
+        let attributedStringKey = [NSAttributedStringKey.font:UIFont(name: FontType, size: FontSiza)!,NSAttributedStringKey.foregroundColor:Color,NSAttributedStringKey.paragraphStyle:paragraphStyle,NSAttributedStringKey.kern:FontKern] as [NSAttributedStringKey : Any]
+        
+        return attributedStringKey
+    }
 }
 

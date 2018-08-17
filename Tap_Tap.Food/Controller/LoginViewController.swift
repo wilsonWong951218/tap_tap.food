@@ -11,7 +11,7 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBAction func LoginSuccessButtonAction(_ sender: UIButton) {
-        let startVC = ViewController()
+        let startVC = MainVC()
         navigationController?.pushViewController(startVC, animated: true)
     }
     override func viewDidLoad() {
