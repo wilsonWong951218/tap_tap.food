@@ -18,7 +18,8 @@ class PlaceMarker: GMSMarker {
         
         super.init()
         position = place.coordinate
-        icon = UIImage(named: place.placeType+"_pin")
+       // icon = UIImage(named: place.placeType+"_pin")
+        icon = UIImage(named: "pin")
         groundAnchor = CGPoint(x: 0.5, y: 1)
         appearAnimation = .pop
     }

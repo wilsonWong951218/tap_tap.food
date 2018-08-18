@@ -9,26 +9,26 @@
 import UIKit
 import CoreData
 import GoogleMaps
-
+ let googleApiKey = "AIzaSyDeHOgTyHogO9LYzaoje7GM13RHP41SJfo"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let googleApiKey = "AIzaSyDeHOgTyHogO9LYzaoje7GM13RHP41SJfo"
+   private let locationManager = CLLocationManager()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         //active GoogleAPI
         GMSServices.provideAPIKey(googleApiKey)
-
+        locationManager.requestWhenInUseAuthorization()
         // Override point for customization after application launch.
-        let storyboard = UIStoryboard(name:"LoginPage" , bundle: nil);
-        self.window? = UIWindow(frame: UIScreen.main.bounds);
-        //指定Storyboard ID
-        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as?   LoginViewController;
-        self.window?.makeKeyAndVisible();
+//        let storyboard = UIStoryboard(name:"LoginPage" , bundle: nil);
+//        self.window? = UIWindow(frame: UIScreen.main.bounds);
+//        //指定Storyboard ID
+//        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as?   LoginViewController;
+//        self.window?.makeKeyAndVisible();
         return true
     }
 
@@ -103,3 +103,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        
+        guard status == .authorizedWhenInUse else {
+            return
+        }
+     
+          NotificationCenter.default.post(name: NSNotification.Name("LocationChange"), object: self)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        if let location = locations.first {
+            let data = ["location":location] as! [String:CLLocation]
+            NotificationCenter.default.post(name: NSNotification.Name("UpdateLocation"), object: nil, userInfo: data)
+        }
+
+    }
+}
