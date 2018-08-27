@@ -9,4 +9,6 @@ target 'Tap_Tap.Food' do
 	pod 'SwiftyJSON'
 	pod 'GoogleMaps'
 	pod 'SideMenu'
+	pod 'Firebase/Core'
+	pod 'Firebase/Auth'
 end
