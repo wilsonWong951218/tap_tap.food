@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4B35BC032125270A0077F9AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B35BC022125270A0077F9AD /* LoginViewController.swift */; };
+		4B5AC9772132973000AC3E19 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5AC9762132973000AC3E19 /* GoogleService-Info.plist */; };
+		4B5AC97B21339E0200AC3E19 /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5AC97A21339E0200AC3E19 /* RoundedWhiteButton.swift */; };
 		AEF6D84DF4A099E9934D606A /* Pods_Tap_Tap_Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88BF8F8D74DE0E057CCB2B9 /* Pods_Tap_Tap_Food.framework */; };
 		E228B5FD2122A2D600A78866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E228B5FC2122A2D600A78866 /* AppDelegate.swift */; };
 		E228B5FF2122A2D600A78866 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E228B5FE2122A2D600A78866 /* MainVC.swift */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		23635372FE563721FDABB0CD /* Pods-Tap_Tap.Food.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap_Tap.Food.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tap_Tap.Food/Pods-Tap_Tap.Food.release.xcconfig"; sourceTree = "<group>"; };
 		4B35BC022125270A0077F9AD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4B5AC9762132973000AC3E19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4B5AC97A21339E0200AC3E19 /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
 		BFEFF432DE7079E4F4F7A534 /* Pods-Tap_Tap.Food.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap_Tap.Food.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tap_Tap.Food/Pods-Tap_Tap.Food.debug.xcconfig"; sourceTree = "<group>"; };
 		E228B5F92122A2D600A78866 /* Tap_Tap.Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tap_Tap.Food.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E228B5FC2122A2D600A78866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B5AC9752132960F00AC3E19 /* AssetsSetting */ = {
+			isa = PBXGroup;
+			children = (
+				E228B6082122A2D800A78866 /* LaunchScreen.storyboard */,
+				E228B5FC2122A2D600A78866 /* AppDelegate.swift */,
+				E228B6032122A2D600A78866 /* Tap_Tap_Food.xcdatamodeld */,
+				E228B6062122A2D800A78866 /* Assets.xcassets */,
+			);
+			path = AssetsSetting;
+			sourceTree = "<group>";
+		};
+		4B5AC9782132979E00AC3E19 /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				E2AAB3C9212513650054CE26 /* TableHeaderCell.swift */,
+				E2AAB3CA212513650054CE26 /* TableHeaderCell.xib */,
+				E29B11222125B56B00D3F78F /* TableViewCell.swift */,
+				E29B11232125B56B00D3F78F /* TableViewCell.xib */,
+			);
+			path = CellView;
+			sourceTree = "<group>";
+		};
 		D42A1EDD07C1286FE64B8ED9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,15 +121,12 @@
 		E228B5FB2122A2D600A78866 /* Tap_Tap.Food */ = {
 			isa = PBXGroup;
 			children = (
-				E228B5FC2122A2D600A78866 /* AppDelegate.swift */,
+				4B5AC9762132973000AC3E19 /* GoogleService-Info.plist */,
+				E228B60B2122A2D800A78866 /* Info.plist */,
+				4B5AC9752132960F00AC3E19 /* AssetsSetting */,
 				E29B112A2125D7B700D3F78F /* Model */,
 				E250461E21245B8300002E46 /* Controller */,
-				E2AAB3C6212512000054CE26 /* VIew */,
-				E250462121245FFB00002E46 /* Storyboard */,
-				E228B6062122A2D800A78866 /* Assets.xcassets */,
-				E228B6082122A2D800A78866 /* LaunchScreen.storyboard */,
-				E228B60B2122A2D800A78866 /* Info.plist */,
-				E228B6032122A2D600A78866 /* Tap_Tap_Food.xcdatamodeld */,
+				E2AAB3C6212512000054CE26 /* View */,
 			);
 			path = Tap_Tap.Food;
 			sourceTree = "<group>";
@@ -116,17 +139,18 @@
 				E2504624212467D900002E46 /* SlideManuVC.swift */,
 				E250461F21245DE900002E46 /* DesignableTextField.swift */,
 				4B35BC022125270A0077F9AD /* LoginViewController.swift */,
+				4B5AC97A21339E0200AC3E19 /* RoundedWhiteButton.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		E250462121245FFB00002E46 /* Storyboard */ = {
+		E250462121245FFB00002E46 /* StoryboardView */ = {
 			isa = PBXGroup;
 			children = (
 				E228B6002122A2D600A78866 /* LoginPage.storyboard */,
 				E25046222124601C00002E46 /* Main.storyboard */,
 			);
-			path = Storyboard;
+			path = StoryboardView;
 			sourceTree = "<group>";
 		};
 		E29B112A2125D7B700D3F78F /* Model */ = {
@@ -139,15 +163,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		E2AAB3C6212512000054CE26 /* VIew */ = {
+		E2AAB3C6212512000054CE26 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E2AAB3C9212513650054CE26 /* TableHeaderCell.swift */,
-				E2AAB3CA212513650054CE26 /* TableHeaderCell.xib */,
-				E29B11222125B56B00D3F78F /* TableViewCell.swift */,
-				E29B11232125B56B00D3F78F /* TableViewCell.xib */,
+				4B5AC9782132979E00AC3E19 /* CellView */,
+				E250462121245FFB00002E46 /* StoryboardView */,
 			);
-			path = VIew;
+			path = View;
 			sourceTree = "<group>";
 		};
 		EBFA3769CDC6BA9A0B42F45A /* Pods */ = {
@@ -226,6 +248,7 @@
 				E228B6022122A2D600A78866 /* LoginPage.storyboard in Resources */,
 				E2AAB3CC212513650054CE26 /* TableHeaderCell.xib in Resources */,
 				E25046232124601C00002E46 /* Main.storyboard in Resources */,
+				4B5AC9772132973000AC3E19 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,13 +298,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tap_Tap.Food/Pods-Tap_Tap.Food-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -304,6 +333,7 @@
 				E228B5FF2122A2D600A78866 /* MainVC.swift in Sources */,
 				E29B112C2125D7E900D3F78F /* PlaceMarker.swift in Sources */,
 				E2AAB3CB212513650054CE26 /* TableHeaderCell.swift in Sources */,
+				4B5AC97B21339E0200AC3E19 /* RoundedWhiteButton.swift in Sources */,
 				E228B5FD2122A2D600A78866 /* AppDelegate.swift in Sources */,
 				E29B11292125D2DF00D3F78F /* MapVC.swift in Sources */,
 				E250462021245DEA00002E46 /* DesignableTextField.swift in Sources */,
