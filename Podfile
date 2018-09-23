@@ -11,4 +11,5 @@ target 'Tap_Tap.Food' do
 	pod 'SideMenu'
 	pod 'Firebase/Core'
 	pod 'Firebase/Auth'
+	pod 'lottie-ios'
 end

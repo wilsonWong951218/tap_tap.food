@@ -133,6 +133,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DWE-Fb-jIQ"/>
+                                                    <segue destination="dm9-1O-a9j" kind="show" id="XaL-8v-MDu"/>
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sign In" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VJ9-rS-lNh">

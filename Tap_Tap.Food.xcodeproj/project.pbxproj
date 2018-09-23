@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B2E631821343D3A00024D49 /* TabAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E631721343D3A00024D49 /* TabAnimationViewController.swift */; };
 		4B35BC032125270A0077F9AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B35BC022125270A0077F9AD /* LoginViewController.swift */; };
 		4B5AC9772132973000AC3E19 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5AC9762132973000AC3E19 /* GoogleService-Info.plist */; };
 		4B5AC97B21339E0200AC3E19 /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5AC97A21339E0200AC3E19 /* RoundedWhiteButton.swift */; };
+		4B8020C021442BD400BF1F72 /* 0.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B8020BB21442BD300BF1F72 /* 0.json */; };
+		4B8020C121442BD400BF1F72 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B8020BC21442BD300BF1F72 /* 1.json */; };
+		4B8020C52144317C00BF1F72 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8020C42144317C00BF1F72 /* image.jpg */; };
+		4B8020CB2144380600BF1F72 /* tapped.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B8020CA2144380500BF1F72 /* tapped.json */; };
+		4B98D7542143C202008BF5D5 /* animation已經tap.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B98D7532143C202008BF5D5 /* animation已經tap.json */; };
 		AEF6D84DF4A099E9934D606A /* Pods_Tap_Tap_Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88BF8F8D74DE0E057CCB2B9 /* Pods_Tap_Tap_Food.framework */; };
 		E228B5FD2122A2D600A78866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E228B5FC2122A2D600A78866 /* AppDelegate.swift */; };
 		E228B5FF2122A2D600A78866 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E228B5FE2122A2D600A78866 /* MainVC.swift */; };
@@ -32,9 +38,15 @@
 
 /* Begin PBXFileReference section */
 		23635372FE563721FDABB0CD /* Pods-Tap_Tap.Food.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap_Tap.Food.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tap_Tap.Food/Pods-Tap_Tap.Food.release.xcconfig"; sourceTree = "<group>"; };
+		4B2E631721343D3A00024D49 /* TabAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAnimationViewController.swift; sourceTree = "<group>"; };
 		4B35BC022125270A0077F9AD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4B5AC9762132973000AC3E19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4B5AC97A21339E0200AC3E19 /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
+		4B8020BB21442BD300BF1F72 /* 0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0.json; sourceTree = "<group>"; };
+		4B8020BC21442BD300BF1F72 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
+		4B8020C42144317C00BF1F72 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		4B8020CA2144380500BF1F72 /* tapped.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tapped.json; sourceTree = "<group>"; };
+		4B98D7532143C202008BF5D5 /* animation已經tap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "animation已經tap.json"; sourceTree = "<group>"; };
 		BFEFF432DE7079E4F4F7A534 /* Pods-Tap_Tap.Food.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap_Tap.Food.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tap_Tap.Food/Pods-Tap_Tap.Food.debug.xcconfig"; sourceTree = "<group>"; };
 		E228B5F92122A2D600A78866 /* Tap_Tap.Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tap_Tap.Food.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E228B5FC2122A2D600A78866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +82,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B2E631521343AEC00024D49 /* SignUpIn */ = {
+			isa = PBXGroup;
+			children = (
+				4B5AC97A21339E0200AC3E19 /* RoundedWhiteButton.swift */,
+			);
+			path = SignUpIn;
+			sourceTree = "<group>";
+		};
+		4B2E631621343AFA00024D49 /* GoogleData */ = {
+			isa = PBXGroup;
+			children = (
+				E29B112D2125D8A700D3F78F /* GoogleData.swift */,
+				E29B112F2125DD9300D3F78F /* GetGoogleData.swift */,
+				E29B112B2125D7E900D3F78F /* PlaceMarker.swift */,
+			);
+			path = GoogleData;
+			sourceTree = "<group>";
+		};
 		4B5AC9752132960F00AC3E19 /* AssetsSetting */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +107,7 @@
 				E228B5FC2122A2D600A78866 /* AppDelegate.swift */,
 				E228B6032122A2D600A78866 /* Tap_Tap_Food.xcdatamodeld */,
 				E228B6062122A2D800A78866 /* Assets.xcassets */,
+				4B8020C42144317C00BF1F72 /* image.jpg */,
 			);
 			path = AssetsSetting;
 			sourceTree = "<group>";
@@ -90,6 +121,25 @@
 				E29B11232125B56B00D3F78F /* TableViewCell.xib */,
 			);
 			path = CellView;
+			sourceTree = "<group>";
+		};
+		4BCE03F0213A5FAC00942862 /* AnimationJsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				4B98D7532143C202008BF5D5 /* animation已經tap.json */,
+				4B8020BB21442BD300BF1F72 /* 0.json */,
+				4B8020BC21442BD300BF1F72 /* 1.json */,
+				4B8020CA2144380500BF1F72 /* tapped.json */,
+			);
+			path = AnimationJsonFiles;
+			sourceTree = "<group>";
+		};
+		4BCE5B4F2134394C00E51B23 /* SignUpIn */ = {
+			isa = PBXGroup;
+			children = (
+				4B35BC022125270A0077F9AD /* LoginViewController.swift */,
+			);
+			path = SignUpIn;
 			sourceTree = "<group>";
 		};
 		D42A1EDD07C1286FE64B8ED9 /* Frameworks */ = {
@@ -123,6 +173,7 @@
 			children = (
 				4B5AC9762132973000AC3E19 /* GoogleService-Info.plist */,
 				E228B60B2122A2D800A78866 /* Info.plist */,
+				4BCE03F0213A5FAC00942862 /* AnimationJsonFiles */,
 				4B5AC9752132960F00AC3E19 /* AssetsSetting */,
 				E29B112A2125D7B700D3F78F /* Model */,
 				E250461E21245B8300002E46 /* Controller */,
@@ -134,12 +185,12 @@
 		E250461E21245B8300002E46 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4BCE5B4F2134394C00E51B23 /* SignUpIn */,
 				E228B5FE2122A2D600A78866 /* MainVC.swift */,
 				E29B11282125D2DF00D3F78F /* MapVC.swift */,
 				E2504624212467D900002E46 /* SlideManuVC.swift */,
 				E250461F21245DE900002E46 /* DesignableTextField.swift */,
-				4B35BC022125270A0077F9AD /* LoginViewController.swift */,
-				4B5AC97A21339E0200AC3E19 /* RoundedWhiteButton.swift */,
+				4B2E631721343D3A00024D49 /* TabAnimationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -156,9 +207,8 @@
 		E29B112A2125D7B700D3F78F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E29B112B2125D7E900D3F78F /* PlaceMarker.swift */,
-				E29B112D2125D8A700D3F78F /* GoogleData.swift */,
-				E29B112F2125DD9300D3F78F /* GetGoogleData.swift */,
+				4B2E631621343AFA00024D49 /* GoogleData */,
+				4B2E631521343AEC00024D49 /* SignUpIn */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,11 +293,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E228B60A2122A2D800A78866 /* LaunchScreen.storyboard in Resources */,
+				4B8020C52144317C00BF1F72 /* image.jpg in Resources */,
 				E29B11252125B56B00D3F78F /* TableViewCell.xib in Resources */,
+				4B8020C021442BD400BF1F72 /* 0.json in Resources */,
+				4B98D7542143C202008BF5D5 /* animation已經tap.json in Resources */,
 				E228B6072122A2D800A78866 /* Assets.xcassets in Resources */,
 				E228B6022122A2D600A78866 /* LoginPage.storyboard in Resources */,
+				4B8020CB2144380600BF1F72 /* tapped.json in Resources */,
 				E2AAB3CC212513650054CE26 /* TableHeaderCell.xib in Resources */,
 				E25046232124601C00002E46 /* Main.storyboard in Resources */,
+				4B8020C121442BD400BF1F72 /* 1.json in Resources */,
 				4B5AC9772132973000AC3E19 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +357,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -310,6 +366,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +385,7 @@
 				E29B11302125DD9300D3F78F /* GetGoogleData.swift in Sources */,
 				E29B112E2125D8A700D3F78F /* GoogleData.swift in Sources */,
 				E29B11242125B56B00D3F78F /* TableViewCell.swift in Sources */,
+				4B2E631821343D3A00024D49 /* TabAnimationViewController.swift in Sources */,
 				E228B6052122A2D600A78866 /* Tap_Tap_Food.xcdatamodeld in Sources */,
 				E2504625212467D900002E46 /* SlideManuVC.swift in Sources */,
 				E228B5FF2122A2D600A78866 /* MainVC.swift in Sources */,
