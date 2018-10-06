@@ -7,12 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B2E631821343D3A00024D49 /* TabAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E631721343D3A00024D49 /* TabAnimationViewController.swift */; };
-		4B35BC032125270A0077F9AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B35BC022125270A0077F9AD /* LoginViewController.swift */; };
 		4B5AC9772132973000AC3E19 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5AC9762132973000AC3E19 /* GoogleService-Info.plist */; };
-		4B5AC97B21339E0200AC3E19 /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5AC97A21339E0200AC3E19 /* RoundedWhiteButton.swift */; };
 		4B8020C021442BD400BF1F72 /* 0.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B8020BB21442BD300BF1F72 /* 0.json */; };
-		4B8020C121442BD400BF1F72 /* 1.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B8020BC21442BD300BF1F72 /* 1.json */; };
 		4B8020C52144317C00BF1F72 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8020C42144317C00BF1F72 /* image.jpg */; };
 		4B8020CB2144380600BF1F72 /* tapped.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B8020CA2144380500BF1F72 /* tapped.json */; };
 		4B98D7542143C202008BF5D5 /* animation已經tap.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B98D7532143C202008BF5D5 /* animation已經tap.json */; };
@@ -29,6 +25,12 @@
 		E24EB7352163A3D5001FC019 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E24EB7332163A3D5001FC019 /* SettingTableViewCell.xib */; };
 		E25046232124601C00002E46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25046222124601C00002E46 /* Main.storyboard */; };
 		E2504625212467D900002E46 /* SlideManuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2504624212467D900002E46 /* SlideManuVC.swift */; };
+		E27661ED21688F860051F106 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27661EC21688F860051F106 /* LoginViewController.swift */; };
+		E27661EF21688FA60051F106 /* TabAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27661EE21688FA60051F106 /* TabAnimationViewController.swift */; };
+		E27661F32168900E0051F106 /* wakeup_speaking.json in Resources */ = {isa = PBXBuildFile; fileRef = E27661F22168900E0051F106 /* wakeup_speaking.json */; };
+		E27661F5216890190051F106 /* circle_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E27661F4216890190051F106 /* circle_animation.json */; };
+		E27661F72168902F0051F106 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = E27661F62168902E0051F106 /* loading.json */; };
+		E27661FA216892760051F106 /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27661F9216892750051F106 /* RoundedWhiteButton.swift */; };
 		E289DC80214D4EE500EFF067 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E289DC7F214D4EE500EFF067 /* Settings.storyboard */; };
 		E289DC82214D500800EFF067 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289DC81214D500800EFF067 /* SettingsVC.swift */; };
 		E29B11242125B56B00D3F78F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B11222125B56B00D3F78F /* TableViewCell.swift */; };
@@ -43,10 +45,7 @@
 
 /* Begin PBXFileReference section */
 		23635372FE563721FDABB0CD /* Pods-Tap_Tap.Food.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap_Tap.Food.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tap_Tap.Food/Pods-Tap_Tap.Food.release.xcconfig"; sourceTree = "<group>"; };
-		4B2E631721343D3A00024D49 /* TabAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAnimationViewController.swift; sourceTree = "<group>"; };
-		4B35BC022125270A0077F9AD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4B5AC9762132973000AC3E19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4B5AC97A21339E0200AC3E19 /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
 		4B8020BB21442BD300BF1F72 /* 0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0.json; sourceTree = "<group>"; };
 		4B8020BC21442BD300BF1F72 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
 		4B8020C42144317C00BF1F72 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
@@ -67,6 +66,12 @@
 		E24EB7332163A3D5001FC019 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
 		E25046222124601C00002E46 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E2504624212467D900002E46 /* SlideManuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideManuVC.swift; sourceTree = "<group>"; };
+		E27661EC21688F860051F106 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E27661EE21688FA60051F106 /* TabAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabAnimationViewController.swift; sourceTree = "<group>"; };
+		E27661F22168900E0051F106 /* wakeup_speaking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wakeup_speaking.json; sourceTree = "<group>"; };
+		E27661F4216890190051F106 /* circle_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = circle_animation.json; sourceTree = "<group>"; };
+		E27661F62168902E0051F106 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		E27661F9216892750051F106 /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
 		E289DC7F214D4EE500EFF067 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		E289DC81214D500800EFF067 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		E29B11222125B56B00D3F78F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -92,14 +97,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4B2E631521343AEC00024D49 /* SignUpIn */ = {
-			isa = PBXGroup;
-			children = (
-				4B5AC97A21339E0200AC3E19 /* RoundedWhiteButton.swift */,
-			);
-			path = SignUpIn;
-			sourceTree = "<group>";
-		};
 		4B2E631621343AFA00024D49 /* GoogleData */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +136,9 @@
 			isa = PBXGroup;
 			children = (
 				4B98D7532143C202008BF5D5 /* animation已經tap.json */,
+				E27661F4216890190051F106 /* circle_animation.json */,
+				E27661F22168900E0051F106 /* wakeup_speaking.json */,
+				E27661F62168902E0051F106 /* loading.json */,
 				4B8020BB21442BD300BF1F72 /* 0.json */,
 				4B8020BC21442BD300BF1F72 /* 1.json */,
 				4B8020CA2144380500BF1F72 /* tapped.json */,
@@ -149,7 +149,7 @@
 		4BCE5B4F2134394C00E51B23 /* SignUpIn */ = {
 			isa = PBXGroup;
 			children = (
-				4B35BC022125270A0077F9AD /* LoginViewController.swift */,
+				E27661EC21688F860051F106 /* LoginViewController.swift */,
 			);
 			path = SignUpIn;
 			sourceTree = "<group>";
@@ -200,16 +200,10 @@
 				4BCE5B4F2134394C00E51B23 /* SignUpIn */,
 				E228B5FE2122A2D600A78866 /* MainVC.swift */,
 				E29B11282125D2DF00D3F78F /* MapVC.swift */,
+				E27661EE21688FA60051F106 /* TabAnimationViewController.swift */,
 				E2504624212467D900002E46 /* SlideManuVC.swift */,
-<<<<<<< HEAD
-				E250461F21245DE900002E46 /* DesignableTextField.swift */,
-				4B2E631721343D3A00024D49 /* TabAnimationViewController.swift */,
-=======
-				4B35BC022125270A0077F9AD /* LoginViewController.swift */,
-				4B5AC97A21339E0200AC3E19 /* RoundedWhiteButton.swift */,
 				E226E4392144E363007E38F7 /* FirstPageVC.swift */,
 				E289DC81214D500800EFF067 /* SettingsVC.swift */,
->>>>>>> 321be3c
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,11 +219,19 @@
 			path = StoryboardView;
 			sourceTree = "<group>";
 		};
+		E27661F8216892750051F106 /* SignUpIn */ = {
+			isa = PBXGroup;
+			children = (
+				E27661F9216892750051F106 /* RoundedWhiteButton.swift */,
+			);
+			path = SignUpIn;
+			sourceTree = "<group>";
+		};
 		E29B112A2125D7B700D3F78F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E27661F8216892750051F106 /* SignUpIn */,
 				4B2E631621343AFA00024D49 /* GoogleData */,
-				4B2E631521343AEC00024D49 /* SignUpIn */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -313,9 +315,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27661F32168900E0051F106 /* wakeup_speaking.json in Resources */,
 				E226E4382144E11A007E38F7 /* FirstPage.storyboard in Resources */,
 				E228B60A2122A2D800A78866 /* LaunchScreen.storyboard in Resources */,
 				4B8020C52144317C00BF1F72 /* image.jpg in Resources */,
+				E27661F72168902F0051F106 /* loading.json in Resources */,
 				E29B11252125B56B00D3F78F /* TableViewCell.xib in Resources */,
 				4B8020C021442BD400BF1F72 /* 0.json in Resources */,
 				4B98D7542143C202008BF5D5 /* animation已經tap.json in Resources */,
@@ -325,11 +329,8 @@
 				E2AAB3CC212513650054CE26 /* TableHeaderCell.xib in Resources */,
 				E289DC80214D4EE500EFF067 /* Settings.storyboard in Resources */,
 				E25046232124601C00002E46 /* Main.storyboard in Resources */,
-<<<<<<< HEAD
-				4B8020C121442BD400BF1F72 /* 1.json in Resources */,
-=======
 				E24EB7352163A3D5001FC019 /* SettingTableViewCell.xib in Resources */,
->>>>>>> 321be3c
+				E27661F5216890190051F106 /* circle_animation.json in Resources */,
 				4B5AC9772132973000AC3E19 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,22 +409,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B35BC032125270A0077F9AD /* LoginViewController.swift in Sources */,
 				E29B11302125DD9300D3F78F /* GetGoogleData.swift in Sources */,
+				E27661FA216892760051F106 /* RoundedWhiteButton.swift in Sources */,
+				E27661EF21688FA60051F106 /* TabAnimationViewController.swift in Sources */,
 				E29B112E2125D8A700D3F78F /* GoogleData.swift in Sources */,
 				E29B11242125B56B00D3F78F /* TableViewCell.swift in Sources */,
-<<<<<<< HEAD
-				4B2E631821343D3A00024D49 /* TabAnimationViewController.swift in Sources */,
-=======
 				E226E43A2144E363007E38F7 /* FirstPageVC.swift in Sources */,
->>>>>>> 321be3c
 				E228B6052122A2D600A78866 /* Tap_Tap_Food.xcdatamodeld in Sources */,
 				E24EB7342163A3D5001FC019 /* SettingTableViewCell.swift in Sources */,
 				E2504625212467D900002E46 /* SlideManuVC.swift in Sources */,
 				E228B5FF2122A2D600A78866 /* MainVC.swift in Sources */,
 				E29B112C2125D7E900D3F78F /* PlaceMarker.swift in Sources */,
 				E2AAB3CB212513650054CE26 /* TableHeaderCell.swift in Sources */,
-				4B5AC97B21339E0200AC3E19 /* RoundedWhiteButton.swift in Sources */,
+				E27661ED21688F860051F106 /* LoginViewController.swift in Sources */,
 				E228B5FD2122A2D600A78866 /* AppDelegate.swift in Sources */,
 				E29B11292125D2DF00D3F78F /* MapVC.swift in Sources */,
 				E289DC82214D500800EFF067 /* SettingsVC.swift in Sources */,
