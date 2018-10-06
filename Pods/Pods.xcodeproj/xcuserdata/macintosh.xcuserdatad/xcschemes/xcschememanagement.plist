@@ -45,6 +45,7 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+<<<<<<< HEAD
 		<key>lottie-ios.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -54,6 +55,12 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>9</integer>
+=======
+		<key>nanopb.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+>>>>>>> 321be3c
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

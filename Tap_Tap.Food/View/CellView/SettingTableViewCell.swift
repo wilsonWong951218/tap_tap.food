@@ -1,18 +1,18 @@
 //
-//  TableViewCell.swift
+//  SettingTableViewCell.swift
 //  Tap_Tap.Food
 //
-//  Created by Macintosh on 2018/8/16.
+//  Created by Macintosh on 2018/10/2.
 //  Copyright © 2018年 LAT. All rights reserved.
 //
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
-    @IBOutlet weak var lbText: UILabel!
+class SettingTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var imageIcon: UIImageView!
     
-    @IBOutlet weak var nextImage: UIImageView!
-    @IBOutlet weak var iconImage: UIImageView!
+    @IBOutlet weak var settingTableText: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -12,7 +12,11 @@ import SideMenu
 class SlideManuVC: UITableViewController {
     
     @IBOutlet var sildeTableView: UITableView!
-    var tableList = ["About Us","FeedBack","Setting"]
+    var tableList = ["Tap Tap Tour","Filters","Feedback","Settings","About Us"]
+    var tableImage = ["1","2","3","4","5"]
+    var nextImage = ["next","next","","next",""]
+   
+    
     let tableViewheaderCellId = "TableHeaderCell"
     let tableViewCellId = "TableViewCell"
     
@@ -20,7 +24,7 @@ class SlideManuVC: UITableViewController {
         super.viewDidLoad()
         sildeTableView.register(UINib(nibName: tableViewheaderCellId, bundle: nil), forHeaderFooterViewReuseIdentifier: tableViewheaderCellId)
         sildeTableView.register(UINib(nibName: tableViewCellId, bundle: nil), forCellReuseIdentifier: tableViewCellId)
-        
+//        sildeTableView.backgroundColor = UIColor.orange
         guard SideMenuManager.default.menuBlurEffectStyle == nil else {
             return
         }
@@ -38,19 +42,39 @@ extension SlideManuVC{
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: tableViewCellId, for: indexPath) as! TableViewCell
         
-        let dictionaryTextView = Dictionary<NSAttributedStringKey, Any>.toNSAttributedStringKey(FontType: "PingFangTC-Regular", FontSiza: 14, FontKern: 1.1, Color: UIColor(red: 74/255, green: 74/255, blue: 74/255, alpha: 1), Aligment: "center")
+        let dictionaryTextView = Dictionary<NSAttributedStringKey, Any>.toNSAttributedStringKey(FontType: "AppleGothic", FontSiza: 16, FontKern: 0, Color: UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1), Aligment: "left")
         
         cell.lbText.attributedText = NSAttributedString(string: tableList[indexPath.row], attributes: dictionaryTextView)
+        cell.iconImage.image = UIImage(named: "\(tableImage[indexPath.row])")
+        cell.nextImage.image = UIImage(named: "\(nextImage[indexPath.row])")
+        
+        //change selected view color
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor(red: 253/255, green: 147/255, blue: 85/255, alpha: 1)
+        cell.selectedBackgroundView = backgroundView
+     
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 3:
+            performSegue(withIdentifier: "toSettingPage", sender: nil)
+        default:
+            break
+        }
+    }
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: tableViewheaderCellId) as! TableHeaderCell
         return headerView
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 200
+        return 150
     }
-        
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+
 }
