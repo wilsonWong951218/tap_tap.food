@@ -13,27 +13,32 @@ class MainVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUpSideMenu()
         
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.barTintColor = UIColor.white
+        self.navigationController?.navigationBar.tintColor = UIColor.black
+    }
+    
     fileprivate func setUpSideMenu(){
         SideMenuManager.default.menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as? UISideMenuNavigationController
 
         
         //三种不同的SideManu的显示.menuSlideIn, .viewSlideInOut, .menuDissolveIn
-         SideMenuManager.default.menuPresentMode = .menuSlideIn
+         SideMenuManager.default.menuPresentMode = .viewSlideInOut
         
         //背后荧幕缩放1为初始值
-        SideMenuManager.default.menuAnimationTransformScaleFactor = CGFloat(0.95)
+        SideMenuManager.default.menuAnimationTransformScaleFactor = CGFloat(1)
         
-        SideMenuManager.default.menuWidth = view.frame.width * CGFloat(0.7)
+        SideMenuManager.default.menuWidth = view.frame.width * CGFloat(0.8)
         SideMenuManager.default.menuFadeStatusBar = false
-        SideMenuManager.default.menuBlurEffectStyle = .light
-        SideMenuManager.default.menuAnimationFadeStrength = CGFloat(0.3)
-        SideMenuManager.default.menuShadowOpacity = Float(0.5)
-        
+        SideMenuManager.default.menuBlurEffectStyle = .none
+        SideMenuManager.default.menuAnimationFadeStrength = CGFloat(0)
+        SideMenuManager.default.menuShadowOpacity = Float(0)
+        SideMenuManager.default.menuAnimationBackgroundColor = UIColor(red: 252/255, green: 138/255, blue: 84/255, alpha: 1)
        
     }
 

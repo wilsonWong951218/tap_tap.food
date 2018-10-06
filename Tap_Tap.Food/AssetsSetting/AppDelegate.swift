@@ -26,11 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSServices.provideAPIKey(googleApiKey)
         locationManager.requestWhenInUseAuthorization()
 //         Override point for customization after application launch.
-        let storyboard = UIStoryboard(name:"LoginPage" , bundle: nil);
-        self.window? = UIWindow(frame: UIScreen.main.bounds);
-        //指定Storyboard ID
-        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as?   LoginViewController;
-        self.window?.makeKeyAndVisible();
+      //  let storyboard = UIStoryboard(name:"LoginPage" , bundle: nil);
+//        self.window? = UIWindow(frame: UIScreen.main.bounds);
+//        //指定Storyboard ID
+//        //self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as?   LoginViewController;
+//        self.window?.makeKeyAndVisible();
         return true
     }
 
