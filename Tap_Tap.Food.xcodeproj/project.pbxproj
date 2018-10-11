@@ -31,6 +31,10 @@
 		E27661F5216890190051F106 /* circle_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E27661F4216890190051F106 /* circle_animation.json */; };
 		E27661F72168902F0051F106 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = E27661F62168902E0051F106 /* loading.json */; };
 		E27661FA216892760051F106 /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27661F9216892750051F106 /* RoundedWhiteButton.swift */; };
+		E27661FE2168F9890051F106 /* Filters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E27661FD2168F9890051F106 /* Filters.storyboard */; };
+		E27662002168FA520051F106 /* FiltersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27661FF2168FA520051F106 /* FiltersVC.swift */; };
+		E27662042169F94E0051F106 /* SearchDonePopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27662032169F94E0051F106 /* SearchDonePopVC.swift */; };
+		E27662062169F9660051F106 /* SearchDonePop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E27662052169F9660051F106 /* SearchDonePop.storyboard */; };
 		E289DC80214D4EE500EFF067 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E289DC7F214D4EE500EFF067 /* Settings.storyboard */; };
 		E289DC82214D500800EFF067 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E289DC81214D500800EFF067 /* SettingsVC.swift */; };
 		E29B11242125B56B00D3F78F /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29B11222125B56B00D3F78F /* TableViewCell.swift */; };
@@ -72,6 +76,10 @@
 		E27661F4216890190051F106 /* circle_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = circle_animation.json; sourceTree = "<group>"; };
 		E27661F62168902E0051F106 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		E27661F9216892750051F106 /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
+		E27661FD2168F9890051F106 /* Filters.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Filters.storyboard; sourceTree = "<group>"; };
+		E27661FF2168FA520051F106 /* FiltersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersVC.swift; sourceTree = "<group>"; };
+		E27662032169F94E0051F106 /* SearchDonePopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDonePopVC.swift; sourceTree = "<group>"; };
+		E27662052169F9660051F106 /* SearchDonePop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchDonePop.storyboard; sourceTree = "<group>"; };
 		E289DC7F214D4EE500EFF067 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		E289DC81214D500800EFF067 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		E29B11222125B56B00D3F78F /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -204,6 +212,8 @@
 				E2504624212467D900002E46 /* SlideManuVC.swift */,
 				E226E4392144E363007E38F7 /* FirstPageVC.swift */,
 				E289DC81214D500800EFF067 /* SettingsVC.swift */,
+				E27661FF2168FA520051F106 /* FiltersVC.swift */,
+				E27662032169F94E0051F106 /* SearchDonePopVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,6 +225,8 @@
 				E25046222124601C00002E46 /* Main.storyboard */,
 				E226E4372144E11A007E38F7 /* FirstPage.storyboard */,
 				E289DC7F214D4EE500EFF067 /* Settings.storyboard */,
+				E27662052169F9660051F106 /* SearchDonePop.storyboard */,
+				E27661FD2168F9890051F106 /* Filters.storyboard */,
 			);
 			path = StoryboardView;
 			sourceTree = "<group>";
@@ -321,6 +333,7 @@
 				4B8020C52144317C00BF1F72 /* image.jpg in Resources */,
 				E27661F72168902F0051F106 /* loading.json in Resources */,
 				E29B11252125B56B00D3F78F /* TableViewCell.xib in Resources */,
+				E27661FE2168F9890051F106 /* Filters.storyboard in Resources */,
 				4B8020C021442BD400BF1F72 /* 0.json in Resources */,
 				4B98D7542143C202008BF5D5 /* animation已經tap.json in Resources */,
 				E228B6072122A2D800A78866 /* Assets.xcassets in Resources */,
@@ -330,6 +343,7 @@
 				E289DC80214D4EE500EFF067 /* Settings.storyboard in Resources */,
 				E25046232124601C00002E46 /* Main.storyboard in Resources */,
 				E24EB7352163A3D5001FC019 /* SettingTableViewCell.xib in Resources */,
+				E27662062169F9660051F106 /* SearchDonePop.storyboard in Resources */,
 				E27661F5216890190051F106 /* circle_animation.json in Resources */,
 				4B5AC9772132973000AC3E19 /* GoogleService-Info.plist in Resources */,
 			);
@@ -381,6 +395,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Tap_Tap.Food/Pods-Tap_Tap.Food-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
@@ -390,6 +405,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
@@ -409,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27662042169F94E0051F106 /* SearchDonePopVC.swift in Sources */,
 				E29B11302125DD9300D3F78F /* GetGoogleData.swift in Sources */,
 				E27661FA216892760051F106 /* RoundedWhiteButton.swift in Sources */,
 				E27661EF21688FA60051F106 /* TabAnimationViewController.swift in Sources */,
@@ -424,6 +441,7 @@
 				E27661ED21688F860051F106 /* LoginViewController.swift in Sources */,
 				E228B5FD2122A2D600A78866 /* AppDelegate.swift in Sources */,
 				E29B11292125D2DF00D3F78F /* MapVC.swift in Sources */,
+				E27662002168FA520051F106 /* FiltersVC.swift in Sources */,
 				E289DC82214D500800EFF067 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

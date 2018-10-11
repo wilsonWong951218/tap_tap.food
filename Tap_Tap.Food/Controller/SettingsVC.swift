@@ -14,24 +14,34 @@ class SettingsVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var tableList = ["Contact Us","Notifications","Terns of Service","Privacy"]
     var nextImage = ["next","next","next","next","next"]
     @IBOutlet weak var settingTable: UITableView!
-    @IBAction func backButton(_ sender: UIButton) {
-        //dismiss(animated: true, completion: nil)
-        navigationController?.popViewController(animated: true)
-    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         settingTable.register(UINib(nibName:tableViewCellId, bundle: nil), forCellReuseIdentifier:tableViewCellId)
-        // Do any additional setup after loading the view.
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.barTintColor = UIColor.orange
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 254/255, green: 138/255, blue: 77/255, alpha: 1)
         self.navigationController?.navigationBar.tintColor = UIColor.white
+        let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = textAttributes
+    }
+    
+    override func willMove(toParentViewController parent: UIViewController?) {
+        super.willMove(toParentViewController: parent)
+        
+        if parent == nil {
+            let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor(red: 253/255, green: 102/255, blue: 78/255, alpha: 1)]
+            self.navigationController?.navigationBar.titleTextAttributes = textAttributes
+            
+        }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
 

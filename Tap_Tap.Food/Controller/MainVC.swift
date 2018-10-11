@@ -17,46 +17,54 @@ class MainVC: UIViewController {
     
     let animationViewTapped = LOTAnimationView(name: "tapped")
     var animationViewLoop = LOTAnimationView()
-
+    var timer:Timer? = nil
+    
     @IBOutlet weak var buttonView: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpSideMenu()
         setUpAnimation()
+        buttonView.addTarget(self, action: #selector(tappedButton), for: .allTouchEvents)
+       
     }
+    
     func randomAnimation() {
         animationViewLoop = LOTAnimationView(name: String(arc4random_uniform(2)))
     }
-    @IBAction func tappedButton(_ sender: UIButton) {
-        animationViewLoop.isHidden = true
-        animationViewLoop.stop()
-        
+    
+    @objc fileprivate func tappedButton(_ sender: UIButton) {
+        print(sender.tag)
         buttonView.isHidden = true
         
-            animationViewTapped.frame = CGRect(x: 0, y: 0, width: self.animationView.frame.size.width, height: self.animationView.frame.size.height)
+        animationViewTapped.frame = CGRect(x: 0, y: 0, width: self.animationView.frame.size.width, height: self.animationView.frame.size.height)
         animationViewTapped.contentMode = .scaleAspectFill
         animationViewTapped.loopAnimation = true
         self.animationView.addSubview(animationViewTapped)
-        
+        timer = Timer.scheduledTimer(timeInterval: 5,target:self,selector:#selector(handleTimer),userInfo:nil,repeats:false)
         animationViewTapped.play()
     }
-
+    
+    @objc fileprivate func handleTimer() {
+        animationViewTapped.stop()
+        buttonView.isHidden = false
+        performSegue(withIdentifier: "toSearchDonePop", sender: nil)
+    }
+    
     private func setUpAnimation() {
-        
         animationViewLoop.frame = CGRect(x: 0, y: 0, width: self.animationView.frame.size.width, height: self.animationView.frame.size.height)
         animationViewLoop.contentMode = .scaleAspectFill
         animationViewLoop.loopAnimation = true
         self.animationView.addSubview(animationViewLoop)
-                
-        animationViewLoop.play()
-        
+//      animationViewLoop.play()
         }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        super.viewWillAppear(true)
         self.navigationController?.navigationBar.barTintColor = UIColor.white
-        self.navigationController?.navigationBar.tintColor = UIColor.black
+        self.navigationController?.navigationBar.tintColor = UIColor.orange
+        let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor(red: 253/255, green: 102/255, blue: 78/255, alpha: 1)]
+        self.navigationController?.navigationBar.titleTextAttributes = textAttributes
     }
 
     
@@ -75,7 +83,7 @@ class MainVC: UIViewController {
         SideMenuManager.default.menuBlurEffectStyle = .none
         SideMenuManager.default.menuAnimationFadeStrength = CGFloat(0)
         SideMenuManager.default.menuShadowOpacity = Float(0)
-        SideMenuManager.default.menuAnimationBackgroundColor = UIColor(red: 252/255, green: 138/255, blue: 84/255, alpha: 1)
+        SideMenuManager.default.menuAnimationBackgroundColor = UIColor(red: 252/255, green: 138/255, blue: 77/255, alpha: 1)
        
     }
     

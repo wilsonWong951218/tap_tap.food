@@ -31,6 +31,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        //指定Storyboard ID
 //        //self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as?   LoginViewController;
 //        self.window?.makeKeyAndVisible();
+        
+        
+        let attributes = [NSAttributedStringKey.font:  UIFont(name: "Helvetica-Bold", size: 0.1)!, NSAttributedStringKey.foregroundColor: UIColor.clear]
+        let BarButtonItemAppearance = UIBarButtonItem.appearance()
+        BarButtonItemAppearance.setTitleTextAttributes(attributes, for: .normal)
+        BarButtonItemAppearance.setTitleTextAttributes(attributes, for: .highlighted)
+
         return true
     }
 
