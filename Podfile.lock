@@ -28,6 +28,8 @@ PODS:
   - FirebaseInstanceID (3.2.0):
     - FirebaseCore (~> 5.1)
     - GoogleUtilities/Environment (~> 5.2)
+  - fluid-slider (0.0.6):
+    - pop
   - GoogleAppMeasurement (5.1.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2.0)
     - GoogleUtilities/MethodSwizzler (~> 5.2.0)
@@ -62,6 +64,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - pop (1.0.10)
   - SideMenu (4.0.0)
   - SwiftyJSON (4.1.0)
 
@@ -69,6 +72,7 @@ DEPENDENCIES:
   - Cosmos (~> 11.0)
   - Firebase/Auth
   - Firebase/Core
+  - fluid-slider (~> 0.0.6)
   - GoogleMaps
   - lottie-ios
   - SideMenu
@@ -83,12 +87,14 @@ SPEC REPOS:
     - FirebaseAuthInterop
     - FirebaseCore
     - FirebaseInstanceID
+    - fluid-slider
     - GoogleAppMeasurement
     - GoogleMaps
     - GoogleUtilities
     - GTMSessionFetcher
     - lottie-ios
     - nanopb
+    - pop
     - SideMenu
     - SwiftyJSON
 
@@ -100,15 +106,17 @@ SPEC CHECKSUMS:
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
   FirebaseCore: ee4b35cf8c8e781da296cc7c15125e4608bb954d
   FirebaseInstanceID: 8cd2c6cfe7b9ab65ce7e248f6da7f26f6775b9be
+  fluid-slider: 3aeb48bd7f875dc0431963fde12674e69c7c0ed2
   GoogleAppMeasurement: e785bdb86d3d280abc778156cec323a975f11d1d
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GoogleUtilities: 06b66f9567769a7958db20a92f0128b2843e49d5
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
   lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   SideMenu: 70ee5657df63ec3382660ec4ef470bf1cf5db07d
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 43c4b35352c2bfd393db49553364196354643931
+PODFILE CHECKSUM: 01e99283b8dff15a54e624a3436be5dcf83e4d96
 
 COCOAPODS: 1.5.0
