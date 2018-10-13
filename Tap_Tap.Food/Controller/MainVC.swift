@@ -20,10 +20,10 @@ class MainVC: UIViewController,CLLocationManagerDelegate {
     var timer:Timer? = nil
     private let locationManager = CLLocationManager()
     private let dataProvider = GetGoogleData()
-    private let searchRadius: Double = 500
+    private var searchRadius: Double = 250
     private var restaurantAfterFilter:DataStore? = nil
-//    var searchedTypes = ["restaurant"]
-    var searchedTypes = ["supermarket"]
+    var searchedTypes = ["restaurant"]
+//    var searchedTypes = ["supermarket"]
     @IBOutlet weak var buttonView: UIButton!
     
     override func viewDidLoad() {
@@ -36,6 +36,8 @@ class MainVC: UIViewController,CLLocationManagerDelegate {
         locationNow()
         NotificationCenter.default.addObserver(self, selector: #selector(locationChange), name: NSNotification.Name(rawValue: "LocationChange"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(locationChange), name: NSNotification.Name(rawValue: "UpdateLocation"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(setRadius(_:)), name: NSNotification.Name(rawValue: "UpdateRadius"), object: nil)
+
     }
     
     func randomAnimation() {
@@ -86,7 +88,6 @@ class MainVC: UIViewController,CLLocationManagerDelegate {
 
         //背后荧幕缩放1为初始值
         SideMenuManager.default.menuAnimationTransformScaleFactor = CGFloat(1)
-        
         SideMenuManager.default.menuWidth = view.frame.width * CGFloat(0.8)
         SideMenuManager.default.menuFadeStatusBar = false
         SideMenuManager.default.menuBlurEffectStyle = .none
@@ -103,6 +104,14 @@ class MainVC: UIViewController,CLLocationManagerDelegate {
         }
     }
     
+    @objc func setRadius(_ notification: NSNotification) {
+        if let dict = notification.userInfo as NSDictionary? {
+            if let id = dict["radius"] as? String{
+                searchRadius = Double(id)!
+                print(searchRadius)
+            }
+        }
+    }
 }
 
 extension MainVC: UISideMenuNavigationControllerDelegate {
@@ -128,6 +137,7 @@ extension MainVC: UISideMenuNavigationControllerDelegate {
 extension MainVC{
   
     private func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D){
+        print("radius:",searchRadius)
         var distanceWalk:String? = nil
         var timeWalk:String? = nil
         dataProvider.fetchPlacesNearCoordinate(coordinate, radius:searchRadius, types: searchedTypes) { places in

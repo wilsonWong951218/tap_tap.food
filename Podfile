@@ -13,4 +13,5 @@ target 'Tap_Tap.Food' do
 	pod 'Firebase/Auth'
 	pod 'lottie-ios'
 	pod 'Cosmos', '~> 11.0'
+	pod 'fluid-slider', '~> 0.0.6'
 end
