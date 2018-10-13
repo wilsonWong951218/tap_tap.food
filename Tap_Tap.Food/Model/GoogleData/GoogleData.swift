@@ -18,12 +18,16 @@ class GoogleData {
     var placeType: String
     var photoReference: String?
     var photo: UIImage?
+    var rating: Double
+    var isOpen: Bool
     
     init(dictionary: [String:Any], acceptedTypes:[String])
     {
         let json = JSON(dictionary)
         name = json["name"].stringValue
         address = json["vicinity"].stringValue
+        rating = json["rating"].doubleValue
+        isOpen = json["opening_hours"]["open_now"].boolValue
         photoReference = json["photos"][0]["photo_reference"].string
         let latitude = json["geometry"]["location"]["lat"].doubleValue as CLLocationDegrees
         let longitude = json["geometry"]["location"]["lng"].doubleValue as CLLocationDegrees

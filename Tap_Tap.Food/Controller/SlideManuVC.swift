@@ -64,6 +64,10 @@ extension SlideManuVC{
             performSegue(withIdentifier: "toFiltersPage", sender: nil)
         case 3:
             performSegue(withIdentifier: "toSettingPage", sender: nil)
+        case 4:
+            if let url = URL(string: "http://www.lat.tw") {
+                UIApplication.shared.open(url)
+            }
         default:
             break
         }

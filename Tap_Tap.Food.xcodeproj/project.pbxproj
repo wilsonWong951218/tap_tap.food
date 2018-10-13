@@ -15,6 +15,8 @@
 		AEF6D84DF4A099E9934D606A /* Pods_Tap_Tap_Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88BF8F8D74DE0E057CCB2B9 /* Pods_Tap_Tap_Food.framework */; };
 		E226E4382144E11A007E38F7 /* FirstPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E226E4372144E11A007E38F7 /* FirstPage.storyboard */; };
 		E226E43A2144E363007E38F7 /* FirstPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226E4392144E363007E38F7 /* FirstPageVC.swift */; };
+		E2285A832170CD5900278694 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2285A822170CD5900278694 /* DataStore.swift */; };
+		E2285A86217106D400278694 /* matrixDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2285A85217106D400278694 /* matrixDataStore.swift */; };
 		E228B5FD2122A2D600A78866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E228B5FC2122A2D600A78866 /* AppDelegate.swift */; };
 		E228B5FF2122A2D600A78866 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E228B5FE2122A2D600A78866 /* MainVC.swift */; };
 		E228B6022122A2D600A78866 /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E228B6002122A2D600A78866 /* LoginPage.storyboard */; };
@@ -58,6 +60,8 @@
 		BFEFF432DE7079E4F4F7A534 /* Pods-Tap_Tap.Food.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap_Tap.Food.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tap_Tap.Food/Pods-Tap_Tap.Food.debug.xcconfig"; sourceTree = "<group>"; };
 		E226E4372144E11A007E38F7 /* FirstPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstPage.storyboard; sourceTree = "<group>"; };
 		E226E4392144E363007E38F7 /* FirstPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageVC.swift; sourceTree = "<group>"; };
+		E2285A822170CD5900278694 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		E2285A85217106D400278694 /* matrixDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matrixDataStore.swift; sourceTree = "<group>"; };
 		E228B5F92122A2D600A78866 /* Tap_Tap.Food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tap_Tap.Food.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E228B5FC2122A2D600A78866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E228B5FE2122A2D600A78866 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 				E29B112D2125D8A700D3F78F /* GoogleData.swift */,
 				E29B112F2125DD9300D3F78F /* GetGoogleData.swift */,
 				E29B112B2125D7E900D3F78F /* PlaceMarker.swift */,
+				E2285A822170CD5900278694 /* DataStore.swift */,
+				E2285A85217106D400278694 /* matrixDataStore.swift */,
 			);
 			path = GoogleData;
 			sourceTree = "<group>";
@@ -427,11 +433,13 @@
 			files = (
 				E27662042169F94E0051F106 /* SearchDonePopVC.swift in Sources */,
 				E29B11302125DD9300D3F78F /* GetGoogleData.swift in Sources */,
+				E2285A832170CD5900278694 /* DataStore.swift in Sources */,
 				E27661FA216892760051F106 /* RoundedWhiteButton.swift in Sources */,
 				E27661EF21688FA60051F106 /* TabAnimationViewController.swift in Sources */,
 				E29B112E2125D8A700D3F78F /* GoogleData.swift in Sources */,
 				E29B11242125B56B00D3F78F /* TableViewCell.swift in Sources */,
 				E226E43A2144E363007E38F7 /* FirstPageVC.swift in Sources */,
+				E2285A86217106D400278694 /* matrixDataStore.swift in Sources */,
 				E228B6052122A2D600A78866 /* Tap_Tap_Food.xcdatamodeld in Sources */,
 				E24EB7342163A3D5001FC019 /* SettingTableViewCell.swift in Sources */,
 				E2504625212467D900002E46 /* SlideManuVC.swift in Sources */,
@@ -591,7 +599,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QCM3V6Y9N;
 				INFOPLIST_FILE = Tap_Tap.Food/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -613,7 +621,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QCM3V6Y9N;
 				INFOPLIST_FILE = Tap_Tap.Food/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
