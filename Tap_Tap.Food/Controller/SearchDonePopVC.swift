@@ -14,6 +14,7 @@ class SearchDonePopVC: UIViewController {
     @IBOutlet weak var popUpView: UIView!
     @IBOutlet weak var closeButton: UIButton!
     
+    @IBOutlet weak var shopImage: UIImageView!
     @IBOutlet weak var shopNameLabel: UILabel!
     @IBOutlet weak var addressLabel: UITextView!
     
@@ -28,19 +29,24 @@ class SearchDonePopVC: UIViewController {
     
     @IBOutlet weak var test: UITextView!
     
+    var restaurantAfterFilter:DataStore? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewSetUp()
+        if let restaurantData = restaurantAfterFilter{
+            viewSetUp(restaurantData)
+        }
         setUpFunc()
         // Do any additional setup after loading the view.
     }
 
-    fileprivate func viewSetUp() {
+    fileprivate func viewSetUp(_ restaurantData:DataStore) {
+        
         popUpView.layer.borderWidth = 1.5
         popUpView.layer.borderColor = UIColor(red: 254/255, green: 138/255, blue: 77/255, alpha: 1).cgColor
         popUpView.layer.cornerRadius = 6.5
-        popUpView.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.42).cgColor
-        popUpView.layer.shadowOpacity = 0.8
+        popUpView.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1).cgColor
+        popUpView.layer.shadowOpacity = 1
         popUpView.layer.shadowRadius = 20
         
         closeButton.backgroundColor = UIColor(red: 254/255, green: 138/255, blue: 77/255, alpha: 1)
@@ -49,20 +55,26 @@ class SearchDonePopVC: UIViewController {
         closeButton.tintColor = UIColor.white
         
         
+        shopImage.layer.cornerRadius = 10
+        shopImage.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner] // Top right corner, Top left corner respectively
+        shopImage.image = restaurantData.photo
+        
         let dictionaryShopNameTextView = Dictionary<NSAttributedStringKey, Any>.toNSAttributedStringKey(FontType: "AppleGothic", FontSiza: 17, FontKern: 0, Color: UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 1), Aligment: "center")
-        shopNameLabel.attributedText = NSAttributedString(string: "McDonald's", attributes: dictionaryShopNameTextView)
+        shopNameLabel.attributedText = NSAttributedString(string: restaurantData.name , attributes: dictionaryShopNameTextView)
         
         let dictionaryAddressTextView = Dictionary<NSAttributedStringKey, Any>.toNSAttributedStringKey(FontType: "AppleGothic", FontSiza: 11, FontKern: 0, Color: UIColor(red: 247/255, green: 146/255, blue: 30/255, alpha: 1), Aligment: "center")
         addressLabel.isEditable = false
-        addressLabel.attributedText = NSAttributedString(string: "100台北市中正區濟南路二段66號", attributes: dictionaryAddressTextView)
+        addressLabel.attributedText = NSAttributedString(string: restaurantData.address , attributes: dictionaryAddressTextView)
         
+        print(restaurantData.rating)
+        starRanking.rating = restaurantData.rating.rounded(.towardZero)
         
         let dictionaryReviewTextView = Dictionary<NSAttributedStringKey, Any>.toNSAttributedStringKey(FontType: "AppleGothic", FontSiza: 11, FontKern: 0, Color: UIColor(red: 102/255, green: 102/255, blue: 102/255, alpha: 1), Aligment: "center")
-        reviewLabel.attributedText = NSAttributedString(string: "783 Reviews", attributes: dictionaryReviewTextView)
+        reviewLabel.attributedText = NSAttributedString(string: restaurantData.isOpen ? "Open Now" : "Close Now", attributes: dictionaryReviewTextView)
         
          let dictionaryDistanceAndMinTextView = Dictionary<NSAttributedStringKey, Any>.toNSAttributedStringKey(FontType: "AppleGothic", FontSiza: 12, FontKern: 0, Color: UIColor(red: 102/255, green: 102/255, blue: 102/255, alpha: 1), Aligment: "left")
-        distanceLabel.attributedText = NSAttributedString(string: "780m", attributes: dictionaryDistanceAndMinTextView)
-        minLabel.attributedText = NSAttributedString(string: "6min", attributes: dictionaryDistanceAndMinTextView)
+        distanceLabel.attributedText = NSAttributedString(string: restaurantData.distanceWalk, attributes: dictionaryDistanceAndMinTextView)
+        minLabel.attributedText = NSAttributedString(string: restaurantData.timeWalk , attributes: dictionaryDistanceAndMinTextView)
     }
     
     fileprivate func setUpFunc() {

@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
+        <deployment version="4352" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -20,9 +20,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8LR-j7-QSC">
-                                <rect key="frame" x="43" y="134" width="290" height="400"/>
+                                <rect key="frame" x="42.5" y="133.5" width="290" height="400"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mcd" translatesAutoresizingMaskIntoConstraints="NO" id="Ott-0a-x4z">
+                                    <imageView autoresizesSubviews="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mcd" translatesAutoresizingMaskIntoConstraints="NO" id="Ott-0a-x4z">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="veg-aL-vC4"/>
@@ -48,7 +48,7 @@
                                             <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="Orange star"/>
                                             <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="Grey star"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="rating">
-                                                <real key="value" value="4"/>
+                                                <real key="value" value="0.0"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
                                                 <real key="value" value="1"/>
@@ -81,11 +81,8 @@
                                             <constraint firstAttribute="height" constant="25" id="gPZ-r7-zP1"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaf-qG-L6I">
-                                        <rect key="frame" x="100" y="346" width="40" height="15"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="40" id="T3S-nc-iju"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaf-qG-L6I">
+                                        <rect key="frame" x="100" y="346" width="48" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -104,8 +101,8 @@
                                             <constraint firstAttribute="height" constant="35" id="lKz-W7-ojU"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="street-address"/>
-                                        <dataDetectorType key="dataDetectorTypes" link="YES" address="YES" lookupSuggestion="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES" address="YES"/>
                                     </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -124,7 +121,7 @@
                                     <constraint firstAttribute="trailing" secondItem="GQ8-v8-kXQ" secondAttribute="trailing" constant="15" id="LY6-k6-pIm"/>
                                     <constraint firstItem="GQ8-v8-kXQ" firstAttribute="leading" secondItem="8LR-j7-QSC" secondAttribute="leading" constant="15" id="VuY-Ar-IPs"/>
                                     <constraint firstItem="zaf-qG-L6I" firstAttribute="firstBaseline" secondItem="nfs-Yh-jcd" secondAttribute="baseline" constant="1" id="WZJ-z2-hOY"/>
-                                    <constraint firstItem="GSo-7e-bJY" firstAttribute="leading" secondItem="zaf-qG-L6I" secondAttribute="trailing" constant="22" id="Yk7-zc-VNc"/>
+                                    <constraint firstItem="GSo-7e-bJY" firstAttribute="leading" secondItem="zaf-qG-L6I" secondAttribute="trailing" constant="15" id="Yk7-zc-VNc"/>
                                     <constraint firstItem="nfs-Yh-jcd" firstAttribute="leading" secondItem="GSo-7e-bJY" secondAttribute="trailing" id="bVk-Fi-ImD"/>
                                     <constraint firstItem="aau-xi-t7B" firstAttribute="top" secondItem="Ott-0a-x4z" secondAttribute="bottom" constant="7" id="drC-jq-gMt"/>
                                     <constraint firstItem="Ott-0a-x4z" firstAttribute="top" secondItem="8LR-j7-QSC" secondAttribute="top" id="fHb-SW-wJb"/>
@@ -143,7 +140,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rs8-9y-y88">
-                                <rect key="frame" x="107" y="509" width="160" height="45"/>
+                                <rect key="frame" x="107.5" y="509" width="160" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="160" id="cbL-wX-Ot3"/>
                                     <constraint firstAttribute="height" constant="45" id="yqA-Yt-r4w"/>
@@ -169,8 +166,9 @@
                         <outlet property="minLabel" destination="nfs-Yh-jcd" id="WFE-RQ-qZN"/>
                         <outlet property="popUpView" destination="8LR-j7-QSC" id="UEp-19-uvD"/>
                         <outlet property="reviewLabel" destination="53j-bD-i7D" id="Dg0-b8-kHO"/>
+                        <outlet property="shopImage" destination="Ott-0a-x4z" id="EeJ-Q3-2z8"/>
                         <outlet property="shopNameLabel" destination="aau-xi-t7B" id="dk7-8T-T4Y"/>
-                        <outlet property="starRanking" destination="48c-aF-CHu" id="H8o-Cl-WAy"/>
+                        <outlet property="starRanking" destination="48c-aF-CHu" id="g9G-b0-S6I"/>
                         <outlet property="test" destination="GQ8-v8-kXQ" id="wBd-ja-XP1"/>
                     </connections>
                 </viewController>

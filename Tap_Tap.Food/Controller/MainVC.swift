@@ -9,24 +9,33 @@
 import UIKit
 import SideMenu
 import Lottie
+import GoogleMaps
 
-class MainVC: UIViewController {
+class MainVC: UIViewController,CLLocationManagerDelegate {
     
     @IBOutlet weak var animationView: UIView!
     var animationArray = [LOTAnimationView]()
-    
     let animationViewTapped = LOTAnimationView(name: "tapped")
     var animationViewLoop = LOTAnimationView()
     var timer:Timer? = nil
-    
+    private let locationManager = CLLocationManager()
+    private let dataProvider = GetGoogleData()
+    private let searchRadius: Double = 500
+    private var restaurantAfterFilter:DataStore? = nil
+//    var searchedTypes = ["restaurant"]
+    var searchedTypes = ["supermarket"]
     @IBOutlet weak var buttonView: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
         setUpSideMenu()
         setUpAnimation()
         buttonView.addTarget(self, action: #selector(tappedButton), for: .allTouchEvents)
-       
+        locationNow()
+        NotificationCenter.default.addObserver(self, selector: #selector(locationChange), name: NSNotification.Name(rawValue: "LocationChange"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(locationChange), name: NSNotification.Name(rawValue: "UpdateLocation"), object: nil)
     }
     
     func randomAnimation() {
@@ -36,7 +45,7 @@ class MainVC: UIViewController {
     @objc fileprivate func tappedButton(_ sender: UIButton) {
         print(sender.tag)
         buttonView.isHidden = true
-        
+        locationNow()
         animationViewTapped.frame = CGRect(x: 0, y: 0, width: self.animationView.frame.size.width, height: self.animationView.frame.size.height)
         animationViewTapped.contentMode = .scaleAspectFill
         animationViewTapped.loopAnimation = true
@@ -87,6 +96,13 @@ class MainVC: UIViewController {
        
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSearchDonePop"{
+            let passData = segue.destination as! SearchDonePopVC
+            passData.restaurantAfterFilter = restaurantAfterFilter
+        }
+    }
+    
 }
 
 extension MainVC: UISideMenuNavigationControllerDelegate {
@@ -105,6 +121,53 @@ extension MainVC: UISideMenuNavigationControllerDelegate {
     
     func sideMenuDidDisappear(menu: UISideMenuNavigationController, animated: Bool) {
         print("SideMenu Disappeared! (animated: \(animated))")
+    }
+    
+}
+
+extension MainVC{
+  
+    private func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D){
+        var distanceWalk:String? = nil
+        var timeWalk:String? = nil
+        dataProvider.fetchPlacesNearCoordinate(coordinate, radius:searchRadius, types: searchedTypes) { places in
+            if places.count > 0 {
+                let randomIndex = Int(arc4random_uniform(UInt32(places.count)))
+                let restaurantName = places[randomIndex].name
+                let address = places[randomIndex].address
+                let rating = places[randomIndex].rating
+                let isOpen = places[randomIndex].isOpen
+                let coordinateEnd = places[randomIndex].coordinate
+                self.dataProvider.fetchDistanceCoordinate(coordinate, coordinateEnd){ distanceRange in
+                    distanceWalk = distanceRange?.distance_walk
+                    timeWalk = distanceRange?.time_walk
+                    if let distance = distanceWalk,let time = timeWalk,let photo = places[randomIndex].photoReference{
+                        self.dataProvider.fetchPhotoFromReference(photo){ photo in
+                            self.restaurantAfterFilter  = DataStore(name: restaurantName, address: address, rating: rating, isOpen: isOpen, distanceWalk: distance, timeWalk: time, photo: photo)
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+    fileprivate func locationNow(){
+        locationManager.startUpdatingLocation()
+        guard let location = locationManager.location else {return}
+        fetchNearbyPlaces(coordinate: location.coordinate)
+        locationManager.stopUpdatingLocation()
+    }
+    
+    @objc fileprivate func locationChange(){
+        locationManager.startUpdatingLocation()
+    }
+    
+    @objc fileprivate func locationUpdate(_ notification: NSNotification){
+        if let location = notification.userInfo!["location"] as? CLLocation{
+            fetchNearbyPlaces(coordinate: location.coordinate)
+            locationManager.stopUpdatingLocation()
+        }
     }
     
 }
