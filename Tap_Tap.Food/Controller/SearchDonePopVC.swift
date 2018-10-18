@@ -56,7 +56,11 @@ class SearchDonePopVC: UIViewController {
         
         
         shopImage.layer.cornerRadius = 10
-        shopImage.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner] // Top right corner, Top left corner respectively
+        if #available(iOS 11.0, *) {
+            shopImage.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
+        } else {
+            // Fallback on earlier versions
+        } // Top right corner, Top left corner respectively
         shopImage.image = restaurantData.photo
         
         let dictionaryShopNameTextView = Dictionary<NSAttributedStringKey, Any>.toNSAttributedStringKey(FontType: "AppleGothic", FontSiza: 17, FontKern: 0, Color: UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 1), Aligment: "center")
