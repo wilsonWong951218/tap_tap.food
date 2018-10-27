@@ -4,7 +4,9 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,7 +36,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGu-wB-9tk">
-                                <rect key="frame" x="0.0" y="114" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="123.5" width="375" height="100"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cB-yu-NUZ" customClass="Slider" customModule="fluid_slider">
                                         <rect key="frame" x="10" y="25" width="355" height="50"/>
@@ -54,21 +56,30 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydL-vj-OdL">
-                                <rect key="frame" x="10" y="74" width="88" height="21"/>
+                                <rect key="frame" x="10" y="72.5" width="88" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ob-nr-hfA">
+                                <rect key="frame" x="0.0" y="-0.5" width="375" height="65"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3ob-nr-hfA" secondAttribute="height" multiplier="75:13" id="Clw-wJ-iEu"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803926" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="ydL-vj-OdL" firstAttribute="top" secondItem="3ob-nr-hfA" secondAttribute="bottom" constant="8" id="3vq-ws-bFL"/>
+                            <constraint firstItem="3ob-nr-hfA" firstAttribute="top" secondItem="3rx-qa-VH0" secondAttribute="top" id="AiJ-Gi-lFd"/>
                             <constraint firstItem="ydL-vj-OdL" firstAttribute="leading" secondItem="QyD-kz-0YL" secondAttribute="leading" constant="10" id="ICu-ur-RJ4"/>
-                            <constraint firstItem="jGu-wB-9tk" firstAttribute="top" secondItem="QyD-kz-0YL" secondAttribute="top" constant="50" id="Iun-Bg-Tpx"/>
+                            <constraint firstItem="3ob-nr-hfA" firstAttribute="width" secondItem="3rx-qa-VH0" secondAttribute="height" multiplier="375:667" id="OTJ-5C-Szh"/>
                             <constraint firstItem="QyD-kz-0YL" firstAttribute="trailing" secondItem="ydL-vj-OdL" secondAttribute="trailing" constant="277" id="WAv-Lv-I6S"/>
-                            <constraint firstItem="jGu-wB-9tk" firstAttribute="top" secondItem="ydL-vj-OdL" secondAttribute="bottom" constant="19" id="XGL-Jz-u9z"/>
+                            <constraint firstItem="jGu-wB-9tk" firstAttribute="top" secondItem="ydL-vj-OdL" secondAttribute="bottom" constant="30" id="XGL-Jz-u9z"/>
                             <constraint firstAttribute="trailing" secondItem="jGu-wB-9tk" secondAttribute="trailing" id="e99-5V-tAF"/>
+                            <constraint firstItem="3ob-nr-hfA" firstAttribute="leading" secondItem="jGu-wB-9tk" secondAttribute="leading" id="fME-AU-v3H"/>
                             <constraint firstItem="jGu-wB-9tk" firstAttribute="leading" secondItem="3rx-qa-VH0" secondAttribute="leading" id="fYE-yY-CNF"/>
-                            <constraint firstItem="ydL-vj-OdL" firstAttribute="top" secondItem="QyD-kz-0YL" secondAttribute="top" constant="10" id="tzN-0P-a3l"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QyD-kz-0YL"/>
                     </view>

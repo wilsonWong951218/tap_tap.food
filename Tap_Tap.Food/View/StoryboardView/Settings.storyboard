@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,7 +16,7 @@
             <objects>
                 <navigationController id="ZD4-nA-4cA" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xzq-TU-rWY">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -34,25 +35,35 @@
             <objects>
                 <viewController storyboardIdentifier="SettingsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zWB-09-l1E" customClass="SettingsVC" customModule="Tap_Tap_Food" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iHO-tC-vhA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0j3-j3-l4N">
-                                <rect key="frame" x="0.0" y="109" width="375" height="337"/>
+                                <rect key="frame" x="0.0" y="109" width="375" height="240"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="zWB-09-l1E" id="YIt-dT-VSY"/>
                                     <outlet property="delegate" destination="zWB-09-l1E" id="4h8-ut-a7L"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tf4-CF-FxQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Tf4-CF-FxQ" secondAttribute="height" multiplier="75:13" id="h4B-8S-wUF"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0j3-j3-l4N" firstAttribute="centerX" secondItem="iHO-tC-vhA" secondAttribute="centerX" id="9d2-HV-ewK"/>
                             <constraint firstItem="0j3-j3-l4N" firstAttribute="leading" secondItem="YlL-GK-ANB" secondAttribute="leading" id="DEq-O9-weH"/>
+                            <constraint firstItem="Tf4-CF-FxQ" firstAttribute="width" secondItem="iHO-tC-vhA" secondAttribute="height" multiplier="375:667" id="EQ2-ba-E20"/>
+                            <constraint firstItem="0j3-j3-l4N" firstAttribute="top" secondItem="Tf4-CF-FxQ" secondAttribute="bottom" constant="44" id="K6K-4N-6EC"/>
                             <constraint firstItem="0j3-j3-l4N" firstAttribute="trailing" secondItem="YlL-GK-ANB" secondAttribute="trailing" id="NP4-Gz-Zm1"/>
-                            <constraint firstItem="0j3-j3-l4N" firstAttribute="top" secondItem="YlL-GK-ANB" secondAttribute="top" constant="21" id="Q8b-O5-rGU"/>
-                            <constraint firstItem="0j3-j3-l4N" firstAttribute="centerY" secondItem="iHO-tC-vhA" secondAttribute="centerY" constant="-128.5" id="XNG-fe-ozs"/>
+                            <constraint firstItem="0j3-j3-l4N" firstAttribute="centerY" secondItem="iHO-tC-vhA" secondAttribute="centerY" constant="-104.5" id="XNG-fe-ozs"/>
+                            <constraint firstItem="Tf4-CF-FxQ" firstAttribute="top" secondItem="iHO-tC-vhA" secondAttribute="top" id="jyY-5c-c45"/>
+                            <constraint firstItem="Tf4-CF-FxQ" firstAttribute="leading" secondItem="0j3-j3-l4N" secondAttribute="leading" id="tVe-xC-KNu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YlL-GK-ANB"/>
                     </view>

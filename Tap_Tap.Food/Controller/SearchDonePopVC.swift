@@ -71,8 +71,9 @@ class SearchDonePopVC: UIViewController {
         addressLabel.attributedText = NSAttributedString(string: restaurantData.address , attributes: dictionaryAddressTextView)
         
         print(restaurantData.rating)
-        starRanking.rating = restaurantData.rating.rounded(.towardZero)
-        
+        starRanking.rating = restaurantData.rating
+        starRanking.settings.fillMode = .precise
+        starRanking.settings.updateOnTouch = false
         let dictionaryReviewTextView = Dictionary<NSAttributedStringKey, Any>.toNSAttributedStringKey(FontType: "AppleGothic", FontSiza: 11, FontKern: 0, Color: UIColor(red: 102/255, green: 102/255, blue: 102/255, alpha: 1), Aligment: "center")
         reviewLabel.attributedText = NSAttributedString(string: restaurantData.isOpen ? "Open Now" : "Close Now", attributes: dictionaryReviewTextView)
         

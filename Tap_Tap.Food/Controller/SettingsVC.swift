@@ -19,10 +19,12 @@ class SettingsVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         super.viewDidLoad()
         settingTable.register(UINib(nibName:tableViewCellId, bundle: nil), forCellReuseIdentifier:tableViewCellId)
         
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        super.viewWillAppear(false)
+       
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 254/255, green: 138/255, blue: 77/255, alpha: 1)
         self.navigationController?.navigationBar.tintColor = UIColor.white
         let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
