@@ -10,6 +10,8 @@ import UIKit
 import CoreData
 import GoogleMaps
 import Firebase
+import UserNotifications
+
  let googleApiKey = "AIzaSyDeHOgTyHogO9LYzaoje7GM13RHP41SJfo"
 
 @UIApplicationMain
@@ -20,19 +22,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
         FirebaseApp.configure()
-        //active GoogleAPI
-
+    
+        //MARK: active GoogleAPI
         GMSServices.provideAPIKey(googleApiKey)
         locationManager.requestWhenInUseAuthorization()
+        
+        //MARK: notification Premission
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+            
+        }
+        UIApplication.shared.registerForRemoteNotifications()
 //         Override point for customization after application launch.
-      //  let storyboard = UIStoryboard(name:"LoginPage" , bundle: nil);
+//        let storyboard = UIStoryboard(name:"LoginPage" , bundle: nil);
 //        self.window? = UIWindow(frame: UIScreen.main.bounds);
 //        //指定Storyboard ID
-//        //self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as?   LoginViewController;
+//        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as?   LoginViewController;
 //        self.window?.makeKeyAndVisible();
         
-        
+        //MARK: Init NavigationBar Color
         let attributes = [NSAttributedStringKey.font:  UIFont(name: "Helvetica-Bold", size: 0.1)!, NSAttributedStringKey.foregroundColor: UIColor.clear]
         let BarButtonItemAppearance = UIBarButtonItem.appearance()
         BarButtonItemAppearance.setTitleTextAttributes(attributes, for: .normal)
@@ -41,6 +50,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let apiFunction = RestfulApi()
+        var tokenString = ""
+
+        for byte in deviceToken {
+            let hexString = String(format: "%02x", byte)
+            tokenString += hexString
+        }
+        print("deviceToken",tokenString)
+        
+        apiFunction.post(tokenString)
+    }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
