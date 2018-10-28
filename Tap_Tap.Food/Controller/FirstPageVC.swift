@@ -31,8 +31,8 @@ class FirstPageVC: UIViewController {
         })
     }
     func setUpAnimation() {
-        let animationView = LOTAnimationView(name: "homePage")
-        let animationViewStack = LOTAnimationView(name: "homePage2")
+        let animationView = LOTAnimationView(name: "波浪")
+        let animationViewStack = LOTAnimationView(name: "波浪")
         animationView.frame = CGRect(x: 0, y: 0, width: self.bottomAnimationView.frame.size.width, height: self.bottomAnimationView.frame.size.height)
         animationView.contentMode = .scaleAspectFill
 //        animationView.loopAnimation = true

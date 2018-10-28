@@ -8,14 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4B5AC9772132973000AC3E19 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B5AC9762132973000AC3E19 /* GoogleService-Info.plist */; };
-		4B8020C021442BD400BF1F72 /* 0.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B8020BB21442BD300BF1F72 /* 0.json */; };
+		4B8020C021442BD400BF1F72 /* tap.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B8020BB21442BD300BF1F72 /* tap.json */; };
 		4B8020C52144317C00BF1F72 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8020C42144317C00BF1F72 /* image.jpg */; };
 		4B8020CB2144380600BF1F72 /* tapped.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B8020CA2144380500BF1F72 /* tapped.json */; };
-		4B98D7542143C202008BF5D5 /* animation已經tap.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B98D7532143C202008BF5D5 /* animation已經tap.json */; };
-		4BF185FE21849C0B00E8219D /* circle.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BF185FD21849C0B00E8219D /* circle.json */; };
-		4BF1860021849C1200E8219D /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BF185FF21849C1100E8219D /* home.json */; };
-		4BF186042184ADCA00E8219D /* homePage.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BF186032184ADCA00E8219D /* homePage.json */; };
-		4BF186062184B1ED00E8219D /* homePage2.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BF186052184B1ED00E8219D /* homePage2.json */; };
+		4BF1860D2185E5FF00E8219D /* 波浪.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BF1860C2185E5FF00E8219D /* 波浪.json */; };
 		AEF6D84DF4A099E9934D606A /* Pods_Tap_Tap_Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88BF8F8D74DE0E057CCB2B9 /* Pods_Tap_Tap_Food.framework */; };
 		E226E4382144E11A007E38F7 /* FirstPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E226E4372144E11A007E38F7 /* FirstPage.storyboard */; };
 		E226E43A2144E363007E38F7 /* FirstPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226E4392144E363007E38F7 /* FirstPageVC.swift */; };
@@ -33,9 +29,6 @@
 		E2504625212467D900002E46 /* SlideManuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2504624212467D900002E46 /* SlideManuVC.swift */; };
 		E27661ED21688F860051F106 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27661EC21688F860051F106 /* LoginViewController.swift */; };
 		E27661EF21688FA60051F106 /* TabAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27661EE21688FA60051F106 /* TabAnimationViewController.swift */; };
-		E27661F32168900E0051F106 /* wakeup_speaking.json in Resources */ = {isa = PBXBuildFile; fileRef = E27661F22168900E0051F106 /* wakeup_speaking.json */; };
-		E27661F5216890190051F106 /* circle_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = E27661F4216890190051F106 /* circle_animation.json */; };
-		E27661F72168902F0051F106 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = E27661F62168902E0051F106 /* loading.json */; };
 		E27661FA216892760051F106 /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27661F9216892750051F106 /* RoundedWhiteButton.swift */; };
 		E27661FE2168F9890051F106 /* Filters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E27661FD2168F9890051F106 /* Filters.storyboard */; };
 		E27662002168FA520051F106 /* FiltersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27661FF2168FA520051F106 /* FiltersVC.swift */; };
@@ -56,14 +49,10 @@
 /* Begin PBXFileReference section */
 		23635372FE563721FDABB0CD /* Pods-Tap_Tap.Food.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap_Tap.Food.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tap_Tap.Food/Pods-Tap_Tap.Food.release.xcconfig"; sourceTree = "<group>"; };
 		4B5AC9762132973000AC3E19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4B8020BB21442BD300BF1F72 /* 0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0.json; sourceTree = "<group>"; };
+		4B8020BB21442BD300BF1F72 /* tap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tap.json; sourceTree = "<group>"; };
 		4B8020C42144317C00BF1F72 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 		4B8020CA2144380500BF1F72 /* tapped.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tapped.json; sourceTree = "<group>"; };
-		4B98D7532143C202008BF5D5 /* animation已經tap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "animation已經tap.json"; sourceTree = "<group>"; };
-		4BF185FD21849C0B00E8219D /* circle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = circle.json; sourceTree = "<group>"; };
-		4BF185FF21849C1100E8219D /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
-		4BF186032184ADCA00E8219D /* homePage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homePage.json; sourceTree = "<group>"; };
-		4BF186052184B1ED00E8219D /* homePage2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = homePage2.json; path = ../../../../../../../../Downloads/homePage2.json; sourceTree = "<group>"; };
+		4BF1860C2185E5FF00E8219D /* 波浪.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "波浪.json"; sourceTree = "<group>"; };
 		BFEFF432DE7079E4F4F7A534 /* Pods-Tap_Tap.Food.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap_Tap.Food.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tap_Tap.Food/Pods-Tap_Tap.Food.debug.xcconfig"; sourceTree = "<group>"; };
 		E226E4372144E11A007E38F7 /* FirstPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstPage.storyboard; sourceTree = "<group>"; };
 		E226E4392144E363007E38F7 /* FirstPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageVC.swift; sourceTree = "<group>"; };
@@ -83,9 +72,6 @@
 		E2504624212467D900002E46 /* SlideManuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideManuVC.swift; sourceTree = "<group>"; };
 		E27661EC21688F860051F106 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E27661EE21688FA60051F106 /* TabAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabAnimationViewController.swift; sourceTree = "<group>"; };
-		E27661F22168900E0051F106 /* wakeup_speaking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wakeup_speaking.json; sourceTree = "<group>"; };
-		E27661F4216890190051F106 /* circle_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = circle_animation.json; sourceTree = "<group>"; };
-		E27661F62168902E0051F106 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		E27661F9216892750051F106 /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
 		E27661FD2168F9890051F106 /* Filters.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Filters.storyboard; sourceTree = "<group>"; };
 		E27661FF2168FA520051F106 /* FiltersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersVC.swift; sourceTree = "<group>"; };
@@ -156,16 +142,9 @@
 		4BCE03F0213A5FAC00942862 /* AnimationJsonFiles */ = {
 			isa = PBXGroup;
 			children = (
-				4B98D7532143C202008BF5D5 /* animation已經tap.json */,
-				E27661F4216890190051F106 /* circle_animation.json */,
-				4BF185FF21849C1100E8219D /* home.json */,
-				4BF185FD21849C0B00E8219D /* circle.json */,
-				E27661F22168900E0051F106 /* wakeup_speaking.json */,
-				4BF186032184ADCA00E8219D /* homePage.json */,
-				4BF186052184B1ED00E8219D /* homePage2.json */,
-				E27661F62168902E0051F106 /* loading.json */,
-				4B8020BB21442BD300BF1F72 /* 0.json */,
-				4B8020CA2144380500BF1F72 /* tapped.json */,
+				4BF1860B2185E48D00E8219D /* 首頁動畫 */,
+				4BF1860A2185E45E00E8219D /* tap過之後 */,
+				4BF186092185E44900E8219D /* tapButton動畫-擴散 */,
 			);
 			path = AnimationJsonFiles;
 			sourceTree = "<group>";
@@ -176,6 +155,30 @@
 				E27661EC21688F860051F106 /* LoginViewController.swift */,
 			);
 			path = SignUpIn;
+			sourceTree = "<group>";
+		};
+		4BF186092185E44900E8219D /* tapButton動畫-擴散 */ = {
+			isa = PBXGroup;
+			children = (
+				4B8020BB21442BD300BF1F72 /* tap.json */,
+			);
+			path = "tapButton動畫-擴散";
+			sourceTree = "<group>";
+		};
+		4BF1860A2185E45E00E8219D /* tap過之後 */ = {
+			isa = PBXGroup;
+			children = (
+				4B8020CA2144380500BF1F72 /* tapped.json */,
+			);
+			path = "tap過之後";
+			sourceTree = "<group>";
+		};
+		4BF1860B2185E48D00E8219D /* 首頁動畫 */ = {
+			isa = PBXGroup;
+			children = (
+				4BF1860C2185E5FF00E8219D /* 波浪.json */,
+			);
+			name = "首頁動畫";
 			sourceTree = "<group>";
 		};
 		D42A1EDD07C1286FE64B8ED9 /* Frameworks */ = {
@@ -343,16 +346,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E27661F32168900E0051F106 /* wakeup_speaking.json in Resources */,
+				4BF1860D2185E5FF00E8219D /* 波浪.json in Resources */,
 				E226E4382144E11A007E38F7 /* FirstPage.storyboard in Resources */,
 				E228B60A2122A2D800A78866 /* LaunchScreen.storyboard in Resources */,
 				4B8020C52144317C00BF1F72 /* image.jpg in Resources */,
-				E27661F72168902F0051F106 /* loading.json in Resources */,
-				4BF186042184ADCA00E8219D /* homePage.json in Resources */,
 				E29B11252125B56B00D3F78F /* TableViewCell.xib in Resources */,
 				E27661FE2168F9890051F106 /* Filters.storyboard in Resources */,
-				4B8020C021442BD400BF1F72 /* 0.json in Resources */,
-				4B98D7542143C202008BF5D5 /* animation已經tap.json in Resources */,
+				4B8020C021442BD400BF1F72 /* tap.json in Resources */,
 				E228B6072122A2D800A78866 /* Assets.xcassets in Resources */,
 				E228B6022122A2D600A78866 /* LoginPage.storyboard in Resources */,
 				4B8020CB2144380600BF1F72 /* tapped.json in Resources */,
@@ -361,10 +361,6 @@
 				E25046232124601C00002E46 /* Main.storyboard in Resources */,
 				E24EB7352163A3D5001FC019 /* SettingTableViewCell.xib in Resources */,
 				E27662062169F9660051F106 /* SearchDonePop.storyboard in Resources */,
-				4BF185FE21849C0B00E8219D /* circle.json in Resources */,
-				4BF186062184B1ED00E8219D /* homePage2.json in Resources */,
-				E27661F5216890190051F106 /* circle_animation.json in Resources */,
-				4BF1860021849C1200E8219D /* home.json in Resources */,
 				4B5AC9772132973000AC3E19 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

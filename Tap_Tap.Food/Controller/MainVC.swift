@@ -15,7 +15,7 @@ class MainVC: UIViewController,CLLocationManagerDelegate {
     
     @IBOutlet weak var animationView: UIView!
     var animationArray = [LOTAnimationView]()
-    let animationViewTapped = LOTAnimationView(name: "circle")
+    let animationViewTapped = LOTAnimationView(name: "tapped")
 //    let animationViewTapped_2 = LOTAnimationView(name: "home")
 
     var animationViewLoop = LOTAnimationView()
@@ -48,7 +48,6 @@ class MainVC: UIViewController,CLLocationManagerDelegate {
         }
     
     func closeButtonReset() {
-        randomAnimation()
         animationViewLoop.isHidden = false
         animationViewLoop.frame = CGRect(x: 0, y: 0, width: self.animationView.frame.size.width, height: self.animationView.frame.size.height)
         animationViewLoop.contentMode = .scaleAspectFill
@@ -76,7 +75,7 @@ class MainVC: UIViewController,CLLocationManagerDelegate {
     }
     
     @objc private func setUpAnimation() {
-        randomAnimation()
+        animationViewLoop = LOTAnimationView(name: "tap")// String(arc4random_uniform(2)))
         
         animationViewLoop.frame = CGRect(x: 0, y: 0, width: self.animationView.frame.size.width, height: self.animationView.frame.size.height)
         animationViewLoop.contentMode = .scaleAspectFill
@@ -96,10 +95,6 @@ class MainVC: UIViewController,CLLocationManagerDelegate {
     NotificationCenter.default.addObserver(self, selector: #selector(locationChange), name: NSNotification.Name(rawValue: "LocationChange"), object: nil)
     NotificationCenter.default.addObserver(self, selector: #selector(locationChange), name: NSNotification.Name(rawValue: "UpdateLocation"), object: nil)
     NotificationCenter.default.addObserver(self, selector: #selector(setRadius(_:)), name: NSNotification.Name(rawValue: "UpdateRadius"), object: nil)
-    }
-
-    func randomAnimation() {
-        animationViewLoop = LOTAnimationView(name: "0")// String(arc4random_uniform(2)))
     }
     
     func setUpTappedAnimation() {

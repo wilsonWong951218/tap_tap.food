@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MCP-ey-Uym">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,13 +19,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLr-I1-Rip">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="406" width="375" height="162.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f8Y-8z-B3H">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="406" width="375" height="162.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pushHelp2" translatesAutoresizingMaskIntoConstraints="NO" id="D8y-SH-WCf">
+                                <rect key="frame" x="0.0" y="568.5" width="375" height="243.5"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBu-xy-v5d">
                                 <rect key="frame" x="50" y="642" width="275" height="70"/>
                                 <color key="backgroundColor" red="0.93396776914596558" green="0.56327986717224121" blue="0.35287994146347046" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -38,18 +41,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="D8y-SH-WCf" firstAttribute="height" secondItem="DUH-rj-Kax" secondAttribute="height" multiplier="0.3" id="1Hv-ut-Oh6"/>
+                            <constraint firstItem="D8y-SH-WCf" firstAttribute="centerX" secondItem="DUH-rj-Kax" secondAttribute="centerX" id="8An-SQ-cKv"/>
                             <constraint firstItem="YBu-xy-v5d" firstAttribute="leading" secondItem="hEc-9B-yI4" secondAttribute="leading" constant="50" id="8OB-js-I5j"/>
                             <constraint firstItem="hLr-I1-Rip" firstAttribute="width" secondItem="DUH-rj-Kax" secondAttribute="width" id="D4w-WS-xlC"/>
                             <constraint firstItem="hLr-I1-Rip" firstAttribute="centerX" secondItem="DUH-rj-Kax" secondAttribute="centerX" id="FIq-iB-68I"/>
                             <constraint firstItem="hEc-9B-yI4" firstAttribute="trailing" secondItem="YBu-xy-v5d" secondAttribute="trailing" constant="50" id="Fpb-Ye-Yde"/>
-                            <constraint firstItem="f8Y-8z-B3H" firstAttribute="height" secondItem="DUH-rj-Kax" secondAttribute="height" id="Jcy-d5-D74"/>
+                            <constraint firstItem="f8Y-8z-B3H" firstAttribute="height" secondItem="DUH-rj-Kax" secondAttribute="height" multiplier="0.2" id="Jcy-d5-D74"/>
                             <constraint firstItem="f8Y-8z-B3H" firstAttribute="width" secondItem="DUH-rj-Kax" secondAttribute="width" id="UJR-4v-XMt"/>
                             <constraint firstItem="f8Y-8z-B3H" firstAttribute="centerX" secondItem="DUH-rj-Kax" secondAttribute="centerX" id="XR7-ad-Rvc"/>
-                            <constraint firstItem="hLr-I1-Rip" firstAttribute="centerY" secondItem="DUH-rj-Kax" secondAttribute="centerY" id="aDn-tu-vDB"/>
+                            <constraint firstItem="hLr-I1-Rip" firstAttribute="centerY" secondItem="DUH-rj-Kax" secondAttribute="centerY" multiplier="1.2" id="aDn-tu-vDB"/>
+                            <constraint firstItem="D8y-SH-WCf" firstAttribute="width" secondItem="DUH-rj-Kax" secondAttribute="width" id="d3q-sp-iUf"/>
                             <constraint firstAttribute="bottom" secondItem="YBu-xy-v5d" secondAttribute="bottom" constant="100" id="gYz-pD-ouY"/>
+                            <constraint firstItem="D8y-SH-WCf" firstAttribute="centerY" secondItem="DUH-rj-Kax" secondAttribute="centerY" multiplier="1.7" id="lGu-7O-Dma"/>
                             <constraint firstItem="YBu-xy-v5d" firstAttribute="centerX" secondItem="DUH-rj-Kax" secondAttribute="centerX" id="lGz-Oq-ev8"/>
-                            <constraint firstItem="f8Y-8z-B3H" firstAttribute="centerY" secondItem="DUH-rj-Kax" secondAttribute="centerY" id="m1y-vv-Xe2"/>
-                            <constraint firstItem="hLr-I1-Rip" firstAttribute="height" secondItem="DUH-rj-Kax" secondAttribute="height" id="yBM-W3-8DF"/>
+                            <constraint firstItem="f8Y-8z-B3H" firstAttribute="centerY" secondItem="DUH-rj-Kax" secondAttribute="centerY" multiplier="1.2" id="m1y-vv-Xe2"/>
+                            <constraint firstItem="hLr-I1-Rip" firstAttribute="height" secondItem="DUH-rj-Kax" secondAttribute="height" multiplier="0.2" id="yBM-W3-8DF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hEc-9B-yI4"/>
                     </view>
@@ -74,4 +81,7 @@
             <point key="canvasLocation" x="669" y="123"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pushHelp2" width="750" height="750"/>
+    </resources>
 </document>
