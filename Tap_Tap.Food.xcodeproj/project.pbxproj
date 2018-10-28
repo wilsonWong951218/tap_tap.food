@@ -12,6 +12,10 @@
 		4B8020C52144317C00BF1F72 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8020C42144317C00BF1F72 /* image.jpg */; };
 		4B8020CB2144380600BF1F72 /* tapped.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B8020CA2144380500BF1F72 /* tapped.json */; };
 		4B98D7542143C202008BF5D5 /* animation已經tap.json in Resources */ = {isa = PBXBuildFile; fileRef = 4B98D7532143C202008BF5D5 /* animation已經tap.json */; };
+		4BF185FE21849C0B00E8219D /* circle.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BF185FD21849C0B00E8219D /* circle.json */; };
+		4BF1860021849C1200E8219D /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BF185FF21849C1100E8219D /* home.json */; };
+		4BF186042184ADCA00E8219D /* homePage.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BF186032184ADCA00E8219D /* homePage.json */; };
+		4BF186062184B1ED00E8219D /* homePage2.json in Resources */ = {isa = PBXBuildFile; fileRef = 4BF186052184B1ED00E8219D /* homePage2.json */; };
 		AEF6D84DF4A099E9934D606A /* Pods_Tap_Tap_Food.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E88BF8F8D74DE0E057CCB2B9 /* Pods_Tap_Tap_Food.framework */; };
 		E226E4382144E11A007E38F7 /* FirstPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E226E4372144E11A007E38F7 /* FirstPage.storyboard */; };
 		E226E43A2144E363007E38F7 /* FirstPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226E4392144E363007E38F7 /* FirstPageVC.swift */; };
@@ -53,10 +57,13 @@
 		23635372FE563721FDABB0CD /* Pods-Tap_Tap.Food.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap_Tap.Food.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tap_Tap.Food/Pods-Tap_Tap.Food.release.xcconfig"; sourceTree = "<group>"; };
 		4B5AC9762132973000AC3E19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4B8020BB21442BD300BF1F72 /* 0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 0.json; sourceTree = "<group>"; };
-		4B8020BC21442BD300BF1F72 /* 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = 1.json; sourceTree = "<group>"; };
 		4B8020C42144317C00BF1F72 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 		4B8020CA2144380500BF1F72 /* tapped.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tapped.json; sourceTree = "<group>"; };
 		4B98D7532143C202008BF5D5 /* animation已經tap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "animation已經tap.json"; sourceTree = "<group>"; };
+		4BF185FD21849C0B00E8219D /* circle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = circle.json; sourceTree = "<group>"; };
+		4BF185FF21849C1100E8219D /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
+		4BF186032184ADCA00E8219D /* homePage.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homePage.json; sourceTree = "<group>"; };
+		4BF186052184B1ED00E8219D /* homePage2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = homePage2.json; path = ../../../../../../../../Downloads/homePage2.json; sourceTree = "<group>"; };
 		BFEFF432DE7079E4F4F7A534 /* Pods-Tap_Tap.Food.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap_Tap.Food.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tap_Tap.Food/Pods-Tap_Tap.Food.debug.xcconfig"; sourceTree = "<group>"; };
 		E226E4372144E11A007E38F7 /* FirstPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstPage.storyboard; sourceTree = "<group>"; };
 		E226E4392144E363007E38F7 /* FirstPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageVC.swift; sourceTree = "<group>"; };
@@ -151,10 +158,13 @@
 			children = (
 				4B98D7532143C202008BF5D5 /* animation已經tap.json */,
 				E27661F4216890190051F106 /* circle_animation.json */,
+				4BF185FF21849C1100E8219D /* home.json */,
+				4BF185FD21849C0B00E8219D /* circle.json */,
 				E27661F22168900E0051F106 /* wakeup_speaking.json */,
+				4BF186032184ADCA00E8219D /* homePage.json */,
+				4BF186052184B1ED00E8219D /* homePage2.json */,
 				E27661F62168902E0051F106 /* loading.json */,
 				4B8020BB21442BD300BF1F72 /* 0.json */,
-				4B8020BC21442BD300BF1F72 /* 1.json */,
 				4B8020CA2144380500BF1F72 /* tapped.json */,
 			);
 			path = AnimationJsonFiles;
@@ -338,6 +348,7 @@
 				E228B60A2122A2D800A78866 /* LaunchScreen.storyboard in Resources */,
 				4B8020C52144317C00BF1F72 /* image.jpg in Resources */,
 				E27661F72168902F0051F106 /* loading.json in Resources */,
+				4BF186042184ADCA00E8219D /* homePage.json in Resources */,
 				E29B11252125B56B00D3F78F /* TableViewCell.xib in Resources */,
 				E27661FE2168F9890051F106 /* Filters.storyboard in Resources */,
 				4B8020C021442BD400BF1F72 /* 0.json in Resources */,
@@ -350,7 +361,10 @@
 				E25046232124601C00002E46 /* Main.storyboard in Resources */,
 				E24EB7352163A3D5001FC019 /* SettingTableViewCell.xib in Resources */,
 				E27662062169F9660051F106 /* SearchDonePop.storyboard in Resources */,
+				4BF185FE21849C0B00E8219D /* circle.json in Resources */,
+				4BF186062184B1ED00E8219D /* homePage2.json in Resources */,
 				E27661F5216890190051F106 /* circle_animation.json in Resources */,
+				4BF1860021849C1200E8219D /* home.json in Resources */,
 				4B5AC9772132973000AC3E19 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
