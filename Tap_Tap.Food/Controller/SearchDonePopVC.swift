@@ -85,9 +85,14 @@ class SearchDonePopVC: UIViewController {
     
     fileprivate func setUpFunc() {
         closeButton.addTarget(self, action: #selector(handleCloseButton), for: .touchUpInside)
-    }
+            }
     
-    @objc fileprivate func handleCloseButton() {
+    @objc func handleCloseButton() {
+        let notify = Notification.Name("initAnimate")
+//        let userInfo :[String: Bool] = ["close": true]
+        
+        NotificationCenter.default.post(name: notify, object: nil, userInfo: nil)
+
         dismiss(animated: true, completion: nil)
     }
 }

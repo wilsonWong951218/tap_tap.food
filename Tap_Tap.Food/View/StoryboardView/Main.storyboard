@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -82,19 +82,13 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKG-3s-sB6">
                                 <rect key="frame" x="0.0" y="64" width="375" height="748"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="6WK-fa-9QN">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="748"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="6WK-fa-9QN" secondAttribute="trailing" id="1eM-ki-VLg"/>
-                                    <constraint firstAttribute="bottom" secondItem="6WK-fa-9QN" secondAttribute="bottom" id="P7y-7t-jY9"/>
-                                    <constraint firstItem="6WK-fa-9QN" firstAttribute="leading" secondItem="pKG-3s-sB6" secondAttribute="leading" id="QGt-0v-CrJ"/>
-                                    <constraint firstItem="6WK-fa-9QN" firstAttribute="top" secondItem="pKG-3s-sB6" secondAttribute="top" id="pTQ-HW-gGE"/>
-                                </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="BTa-7a-J1S">
+                                <rect key="frame" x="0.0" y="32" width="375" height="748"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6WK-fa-9QN">
+                                <rect key="frame" x="20.5" y="239" width="334" height="334"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pd5-R7-b9f">
                                 <rect key="frame" x="20.5" y="239" width="334" height="334"/>
                                 <constraints>
@@ -110,11 +104,19 @@
                         <color key="tintColor" red="1" green="0.85490196078431369" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Pd5-R7-b9f" firstAttribute="centerY" secondItem="XbV-B1-6rc" secondAttribute="centerY" id="6Wd-rK-MJa"/>
-                            <constraint firstItem="pKG-3s-sB6" firstAttribute="trailing" secondItem="B15-dB-sxl" secondAttribute="trailing" id="9ga-iw-kiy"/>
-                            <constraint firstItem="pKG-3s-sB6" firstAttribute="leading" secondItem="B15-dB-sxl" secondAttribute="leading" id="Ftp-oI-c3M"/>
+                            <constraint firstItem="BTa-7a-J1S" firstAttribute="centerY" secondItem="XbV-B1-6rc" secondAttribute="centerY" id="7Uj-82-8IP"/>
+                            <constraint firstItem="BTa-7a-J1S" firstAttribute="width" secondItem="pKG-3s-sB6" secondAttribute="width" id="9fB-SG-AQy"/>
+                            <constraint firstItem="6WK-fa-9QN" firstAttribute="centerY" secondItem="XbV-B1-6rc" secondAttribute="centerY" id="E7I-oR-5Wx"/>
+                            <constraint firstItem="pKG-3s-sB6" firstAttribute="bottom" secondItem="B15-dB-sxl" secondAttribute="bottom" id="GP1-Ys-G8C"/>
+                            <constraint firstItem="6WK-fa-9QN" firstAttribute="centerX" secondItem="XbV-B1-6rc" secondAttribute="centerX" id="KeM-95-HYr"/>
+                            <constraint firstItem="6WK-fa-9QN" firstAttribute="height" secondItem="Pd5-R7-b9f" secondAttribute="height" id="acr-Sg-oSM"/>
                             <constraint firstItem="Pd5-R7-b9f" firstAttribute="centerX" secondItem="XbV-B1-6rc" secondAttribute="centerX" id="cdT-7n-BRP"/>
-                            <constraint firstItem="pKG-3s-sB6" firstAttribute="bottom" secondItem="B15-dB-sxl" secondAttribute="bottom" id="utY-1F-9gK"/>
-                            <constraint firstItem="pKG-3s-sB6" firstAttribute="top" secondItem="B15-dB-sxl" secondAttribute="top" id="xJy-ON-m21"/>
+                            <constraint firstItem="BTa-7a-J1S" firstAttribute="centerX" secondItem="XbV-B1-6rc" secondAttribute="centerX" id="cen-Vd-duK"/>
+                            <constraint firstItem="BTa-7a-J1S" firstAttribute="height" secondItem="pKG-3s-sB6" secondAttribute="height" id="dTK-3U-tSs"/>
+                            <constraint firstItem="pKG-3s-sB6" firstAttribute="top" secondItem="B15-dB-sxl" secondAttribute="top" id="fTY-vw-CXN"/>
+                            <constraint firstItem="pKG-3s-sB6" firstAttribute="trailing" secondItem="B15-dB-sxl" secondAttribute="trailing" id="iSM-iX-AFu"/>
+                            <constraint firstItem="pKG-3s-sB6" firstAttribute="leading" secondItem="B15-dB-sxl" secondAttribute="leading" id="phI-Ww-REa"/>
+                            <constraint firstItem="6WK-fa-9QN" firstAttribute="width" secondItem="Pd5-R7-b9f" secondAttribute="width" id="xrB-jL-Q0c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="B15-dB-sxl"/>
                     </view>
@@ -138,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYG-dW-cmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-255" y="957"/>
+            <point key="canvasLocation" x="-255.19999999999999" y="956.22188905547239"/>
         </scene>
         <!--SearchDonePop-->
         <scene sceneID="5Is-pe-V9N">
